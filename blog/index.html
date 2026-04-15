@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Journal | Kitesurf Cartagena Blog</title>
+    <meta
+      name="description"
+      content="Expert guides on Kitesurfing seasons, gear, safety, and travel tips for Cartagena, Colombia."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Montserrat", "sans-serif"],
+              serif: ["Playfair Display", "serif"],
+            },
+            colors: { brand: { navy: "#051b2c", gold: "#c5a059" } },
+          },
+        },
+      };
+    </script>
+    <style>
+      .glass-nav {
+        background: rgba(5, 27, 44, 0.95);
+        backdrop-filter: blur(10px);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+    <!-- Nav (Master - Active: Journal) -->
+    <nav
+      class="fixed w-full z-50 glass-nav text-white transition-all duration-300"
+      id="navbar"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo -->
+          <a href="../index.html" class="flex flex-col group">
+            <span
+              class="font-serif text-sm tracking-wide font-bold text-white group-hover:text-brand-gold transition"
+              >CARTAGENA KITESURF CENTER</span
+            >
+            <span class="text-[9px] uppercase tracking-[0.4em] text-gray-400"
+              >Naval Standard</span
+            >
+          </a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-10 items-center">
+            <a
+              href="../about.html"
+              class="text-xs font-bold uppercase tracking-widest hover:text-brand-gold transition text-white"
+              >About Us</a
+            >
+            <a
+              href="../experiences.html"
+              class="text-xs font-bold uppercase tracking-widest hover:text-brand-gold transition text-white"
+              >Experiences</a
+            >
+            <!-- Active State Added Here -->
+            <a
+              href="../blog/index.html"
+              class="text-xs font-bold uppercase tracking-widest text-brand-gold transition"
+              >Journal</a
+            >
+            <a
+              href="../experiences.html"
+              class="border border-brand-gold text-brand-gold px-6 py-2 rounded-sm font-bold text-xs hover:bg-brand-gold hover:text-brand-navy transition duration-300 tracking-widest uppercase"
+            >
+              Book Now
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            class="md:hidden text-xl text-brand-gold"
+            onclick="toggleMobileMenu()"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-brand-navy border-t border-gray-800 absolute w-full left-0 top-20 h-screen"
+      >
+        <div class="px-8 pt-10 pb-8 space-y-6 flex flex-col text-center">
+          <a href="../about.html" class="text-white text-lg font-serif"
+            >The Team</a
+          >
+          <a href="../experiences.html" class="text-white text-lg font-serif"
+            >Services Catalog</a
+          >
+          <a href="../blog/index.html" class="text-white text-lg font-serif"
+            >Journal</a
+          >
+          <a href="../terms.html" class="text-gray-400 text-sm"
+            >Terms & Policy</a
+          >
+          <a
+            href="https://wa.me/573044301112?text=Hi!%20I%20found%20the%20Cartagena%20Kitesurf%20Center%20Journal%20and%20I%27m%20interested%20in%20your%20water%20sports%20experiences.%20Can%20you%20help%20me%20plan%20my%20visit%3F"
+            class="bg-brand-gold text-brand-navy py-4 font-bold mt-4 rounded-sm w-full"
+            >CONTACT CONCIERGE</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Content (Padded) -->
+    <header class="bg-white pt-40 pb-20 border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <span
+          class="text-brand-gold font-bold uppercase tracking-[0.2em] text-xs block mb-4"
+          >Marine Tech Journal</span
+        >
+        <h1 class="font-serif text-5xl text-brand-navy mb-4">Winds & Waves</h1>
+        <p class="text-gray-500 font-light max-w-2xl mx-auto">
+          Expert insights on winds, waves, and the nautical lifestyle in
+          Cartagena.
+        </p>
+      </div>
+    </header>
+
+    <main
+      class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 lg:grid-cols-3 gap-10"
+    >
+      <!-- Article 1 (Updated Image) -->
+      <article
+        class="bg-white shadow-lg rounded-sm overflow-hidden group flex flex-col"
+      >
+        <div class="h-56 overflow-hidden">
+          <img
+            src="../images/kite.webp"
+            loading="lazy"
+            alt="Kitesurfing Season"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          />
+        </div>
+        <div class="p-8 flex-grow flex flex-col">
+          <span
+            class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-2 block"
+            >Guides</span
+          >
+          <h2
+            class="font-serif text-2xl text-brand-navy mb-4 group-hover:text-brand-gold transition"
+          >
+            The Ultimate Guide to Cartagena's Windy Season
+          </h2>
+          <p class="text-gray-500 text-sm mb-6 leading-relaxed flex-grow">
+            When to book your trip? We analyze the "Trade Winds" vs the
+            "Veranillo" to help you plan the perfect session.
+          </p>
+          <a
+            href="best-time-kitesurf-cartagena/index.html"
+            class="text-brand-navy font-bold text-xs uppercase border-b border-brand-gold pb-1 w-max"
+            >Read Article</a
+          >
+        </div>
+      </article>
+
+      <!-- Article 2 (Updated Image) -->
+      <article
+        class="bg-white shadow-lg rounded-sm overflow-hidden group flex flex-col"
+      >
+        <div class="h-56 overflow-hidden">
+          <img
+            src="../images/sup.webp"
+            loading="lazy"
+            alt="SUP in Cartagena"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          />
+        </div>
+        <div class="p-8 flex-grow flex flex-col">
+          <span
+            class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-2 block"
+            >Lifestyle</span
+          >
+          <h2
+            class="font-serif text-2xl text-brand-navy mb-4 group-hover:text-brand-gold transition"
+          >
+            Top 5 Water Sports in Cartagena (Beyond the Beach)
+          </h2>
+          <p class="text-gray-500 text-sm mb-6 leading-relaxed flex-grow">
+            From sunset SUP in the mangroves to high-speed foiling. Discover
+            what else the Caribbean offers.
+          </p>
+          <a
+            href="top-water-sports-cartagena/index.html"
+            class="text-brand-navy font-bold text-xs uppercase border-b border-brand-gold pb-1 w-max"
+            >Read Article</a
+          >
+        </div>
+      </article>
+
+      <!-- NEW Article 3: Safety -->
+      <article
+        class="bg-white shadow-lg rounded-sm overflow-hidden group flex flex-col"
+      >
+        <div class="h-56 overflow-hidden">
+          <img
+            src="../images/class.webp"
+            loading="lazy"
+            alt="Safety in Water Sports"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          />
+        </div>
+        <div class="p-8 flex-grow flex flex-col">
+          <span
+            class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-2 block"
+            >Safety</span
+          >
+          <h2
+            class="font-serif text-2xl text-brand-navy mb-4 group-hover:text-brand-gold transition"
+          >
+            Is Kitesurfing Safe in Cartagena?
+          </h2>
+          <p class="text-gray-500 text-sm mb-6 leading-relaxed flex-grow">
+            A Naval Officer's perspective on safety protocols, beach hazards,
+            and how to stay safe while riding.
+          </p>
+          <a
+            href="safety-tips-cartagena/index.html"
+            class="text-brand-navy font-bold text-xs uppercase border-b border-brand-gold pb-1 w-max"
+            >Read Article</a
+          >
+        </div>
+      </article>
+
+      <!-- NEW Article 4: Packing List -->
+      <article
+        class="bg-white shadow-lg rounded-sm overflow-hidden group flex flex-col"
+      >
+        <div class="h-56 overflow-hidden">
+          <img
+            src="../images/gear.webp"
+            loading="lazy"
+            alt="Kite Gear Packing"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          />
+        </div>
+        <div class="p-8 flex-grow flex flex-col">
+          <span
+            class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-2 block"
+            >Travel</span
+          >
+          <h2
+            class="font-serif text-2xl text-brand-navy mb-4 group-hover:text-brand-gold transition"
+          >
+            Essential Packing List for your Kite Trip
+          </h2>
+          <p class="text-gray-500 text-sm mb-6 leading-relaxed flex-grow">
+            What to bring and what to rent. Don't waste luggage space on things
+            you don't need.
+          </p>
+          <a
+            href="kitesurf-packing-list/index.html"
+            class="text-brand-navy font-bold text-xs uppercase border-b border-brand-gold pb-1 w-max"
+            >Read Article</a
+          >
+        </div>
+      </article>
+
+      <!-- NEW Article 5: Differences -->
+      <article
+        class="bg-white shadow-lg rounded-sm overflow-hidden group flex flex-col"
+      >
+        <div class="h-56 overflow-hidden">
+          <img
+            src="../images/foil.webp"
+            loading="lazy"
+            alt="Kite vs Wing vs Foil"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          />
+        </div>
+        <div class="p-8 flex-grow flex flex-col">
+          <span
+            class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-2 block"
+            >Education</span
+          >
+          <h2
+            class="font-serif text-2xl text-brand-navy mb-4 group-hover:text-brand-gold transition"
+          >
+            Kite, Wing, or Foil: Which is for you?
+          </h2>
+          <p class="text-gray-500 text-sm mb-6 leading-relaxed flex-grow">
+            Confused by the options? We break down the differences and help you
+            choose your next addiction.
+          </p>
+          <a
+            href="kite-wing-foil-differences/index.html"
+            class="text-brand-navy font-bold text-xs uppercase border-b border-brand-gold pb-1 w-max"
+            >Read Article</a
+          >
+        </div>
+      </article>
+
+      <!-- Article 6: Beginners Guide -->
+      <article
+        class="bg-white shadow-lg rounded-sm overflow-hidden group flex flex-col"
+      >
+        <div class="h-56 overflow-hidden">
+          <img
+            src="../images/woman.webp"
+            loading="lazy"
+            alt="Woman learning kitesurfing Cartagena"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          />
+        </div>
+        <div class="p-8 flex-grow flex flex-col">
+          <span
+            class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-2 block"
+            >Beginners</span
+          >
+          <h2
+            class="font-serif text-2xl text-brand-navy mb-4 group-hover:text-brand-gold transition"
+          >
+            Is Kitesurfing Right for You? The Complete Beginner's Guide
+          </h2>
+          <p class="text-gray-500 text-sm mb-6 leading-relaxed flex-grow">
+            Who can learn, what to expect in your first session, and why
+            Cartagena is the ideal place to start.
+          </p>
+          <div class="flex items-center justify-between mt-auto">
+            <a
+              href="kitesurfing-for-beginners-cartagena/index.html"
+              class="text-brand-navy font-bold text-xs uppercase border-b border-brand-gold pb-1 w-max"
+              >Read Article</a
+            >
+            <span class="text-[10px] text-gray-400 uppercase"
+              >Apr 15, 2026</span
+            >
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 7: How Long to Learn -->
+      <article
+        class="bg-white shadow-lg rounded-sm overflow-hidden group flex flex-col"
+      >
+        <div class="h-56 overflow-hidden">
+          <img
+            src="../images/pro.webp"
+            loading="lazy"
+            alt="Professional kitesurf rider Cartagena"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          />
+        </div>
+        <div class="p-8 flex-grow flex flex-col">
+          <span
+            class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-2 block"
+            >Education</span
+          >
+          <h2
+            class="font-serif text-2xl text-brand-navy mb-4 group-hover:text-brand-gold transition"
+          >
+            How Long Does It Take to Learn to Kitesurf?
+          </h2>
+          <p class="text-gray-500 text-sm mb-6 leading-relaxed flex-grow">
+            The honest answer, with a phase-by-phase breakdown and a realistic
+            timeline for all types of students.
+          </p>
+          <div class="flex items-center justify-between mt-auto">
+            <a
+              href="how-long-to-learn-kitesurfing/index.html"
+              class="text-brand-navy font-bold text-xs uppercase border-b border-brand-gold pb-1 w-max"
+              >Read Article</a
+            >
+            <span class="text-[10px] text-gray-400 uppercase">Apr 1, 2026</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 8: La Boquilla Spot Guide -->
+      <article
+        class="bg-white shadow-lg rounded-sm overflow-hidden group flex flex-col"
+      >
+        <div class="h-56 overflow-hidden">
+          <img
+            src="../images/avanzado.webp"
+            loading="lazy"
+            alt="Kitesurfing at La Boquilla Cartagena"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          />
+        </div>
+        <div class="p-8 flex-grow flex flex-col">
+          <span
+            class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-2 block"
+            >Destinations</span
+          >
+          <h2
+            class="font-serif text-2xl text-brand-navy mb-4 group-hover:text-brand-gold transition"
+          >
+            La Boquilla Cartagena: The Complete Kitesurf Spot Guide
+          </h2>
+          <p class="text-gray-500 text-sm mb-6 leading-relaxed flex-grow">
+            Wind patterns, water zones, hazards, and insider tips for the
+            Caribbean's best kite spot.
+          </p>
+          <div class="flex items-center justify-between mt-auto">
+            <a
+              href="kitesurf-la-boquilla-spot-guide/index.html"
+              class="text-brand-navy font-bold text-xs uppercase border-b border-brand-gold pb-1 w-max"
+              >Read Article</a
+            >
+            <span class="text-[10px] text-gray-400 uppercase">Apr 2, 2026</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 9: First Jump Guide -->
+      <article
+        class="bg-white shadow-lg rounded-sm overflow-hidden group flex flex-col"
+      >
+        <div class="h-56 overflow-hidden">
+          <img
+            src="../images/jump.webp"
+            loading="lazy"
+            alt="Kitesurf jump La Boquilla Cartagena"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          />
+        </div>
+        <div class="p-8 flex-grow flex flex-col">
+          <span
+            class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-2 block"
+            >Progression</span
+          >
+          <h2
+            class="font-serif text-2xl text-brand-navy mb-4 group-hover:text-brand-gold transition"
+          >
+            Your First Kite Jump: A Step-by-Step Technique Guide
+          </h2>
+          <p class="text-gray-500 text-sm mb-6 leading-relaxed flex-grow">
+            The exact sequence — edge, send, pop, body position, and landing —
+            explained for intermediate riders.
+          </p>
+          <div class="flex items-center justify-between mt-auto">
+            <a
+              href="first-kitesurf-jump-guide/index.html"
+              class="text-brand-navy font-bold text-xs uppercase border-b border-brand-gold pb-1 w-max"
+              >Read Article</a
+            >
+            <span class="text-[10px] text-gray-400 uppercase"
+              >Apr 14, 2026</span
+            >
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- Footer (Master) -->
+    <footer
+      class="bg-brand-navy text-white py-12 border-t border-white/10 mt-auto"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-sm"
+      >
+        <div class="col-span-2 md:col-span-2">
+          <span
+            class="font-serif text-2xl tracking-widest font-bold text-brand-gold"
+            >MARINE TECH</span
+          >
+          <p
+            class="text-gray-400 mt-4 max-w-sm leading-relaxed font-light text-xs md:text-sm"
+          >
+            The leading authority in water sports tourism in Cartagena. Founded
+            on the principles of discipline, safety, and excellence.
+          </p>
+          <div class="mt-6 flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition"
+              ><i class="fab fa-instagram text-xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition"
+              ><i class="fab fa-facebook text-xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition"
+              ><i class="fab fa-tripadvisor text-xl"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="col-span-1">
+          <h4
+            class="font-bold uppercase tracking-widest mb-4 text-brand-gold text-xs"
+          >
+            Explore
+          </h4>
+          <ul class="space-y-2 text-gray-400 font-light text-xs">
+            <li>
+              <a href="../about.html" class="hover:text-white transition"
+                >The Team</a
+              >
+            </li>
+            <li>
+              <a href="../experiences.html" class="hover:text-white transition"
+                >All Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="../experiences.html#rentals"
+                class="hover:text-white transition"
+                >Rentals</a
+              >
+            </li>
+            <li>
+              <a href="../blog/index.html" class="hover:text-white transition"
+                >Journal</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-span-1">
+          <h4
+            class="font-bold uppercase tracking-widest mb-4 text-brand-gold text-xs"
+          >
+            Legal
+          </h4>
+          <ul class="space-y-2 text-gray-400 font-light text-xs">
+            <li>
+              <a href="../terms.html" class="hover:text-white transition"
+                >Terms</a
+              >
+            </li>
+            <li>
+              <a
+                href="../terms.html#privacy"
+                class="hover:text-white transition"
+                >Privacy</a
+              >
+            </li>
+            <li>
+              <a
+                href="../terms.html#cancellation"
+                class="hover:text-white transition"
+                >Refunds</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t border-white/10 mt-8 pt-6 text-center text-gray-500 text-[10px] uppercase tracking-widest"
+      >
+        &copy; 2024 Marine Tech Cartagena. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>

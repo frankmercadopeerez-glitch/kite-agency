@@ -1,0 +1,1355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiences & Services | Marine Tech Cartagena</title>
+    <meta
+      name="description"
+      content="Full catalog of Kitesurfing courses, rentals, and tours in Cartagena. Detailed pricing and inclusions."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Montserrat", "sans-serif"],
+              serif: ["Playfair Display", "serif"],
+            },
+            colors: {
+              brand: { navy: "#051b2c", gold: "#c5a059", cream: "#f9f9f7" },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .price-tag {
+        font-family: "Playfair Display", serif;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 120px;
+      }
+      .glass-nav {
+        background: rgba(5, 27, 44, 0.98);
+        backdrop-filter: blur(10px);
+      }
+      /* Modal Animation */
+      .modal {
+        transition:
+          opacity 0.3s ease-in-out,
+          visibility 0.3s ease-in-out;
+      }
+      .modal-content {
+        transform: scale(0.95);
+        transition: transform 0.3s ease-in-out;
+      }
+      .modal.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .modal.active .modal-content {
+        transform: scale(1);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+    <!-- Nav (Master) -->
+    <nav
+      class="fixed w-full z-50 glass-nav text-white transition-all duration-300 shadow-md"
+      id="navbar"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <a href="index.html" class="flex flex-col group">
+            <span
+              class="font-serif text-sm tracking-wide font-bold text-white group-hover:text-brand-gold transition"
+              >CARTAGENA KITESURF CENTER</span
+            >
+            <span class="text-[9px] uppercase tracking-[0.4em] text-gray-400"
+              >Naval Standard</span
+            >
+          </a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-10 items-center">
+            <a
+              href="about.html"
+              class="text-xs font-bold uppercase tracking-widest hover:text-brand-gold transition text-white"
+              >About Us</a
+            >
+            <a
+              href="experiences.html"
+              class="text-xs font-bold uppercase tracking-widest text-brand-gold transition"
+              >Experiences</a
+            >
+            <a
+              href="blog/index.html"
+              class="text-xs font-bold uppercase tracking-widest hover:text-brand-gold transition text-white"
+              >Journal</a
+            >
+            <a
+              href="experiences.html"
+              class="border border-brand-gold text-brand-gold px-6 py-2 rounded-sm font-bold text-xs hover:bg-brand-gold hover:text-brand-navy transition duration-300 tracking-widest uppercase"
+            >
+              Book Now
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            class="md:hidden text-xl text-brand-gold"
+            onclick="toggleMobileMenu()"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-brand-navy border-t border-gray-800 absolute w-full left-0 top-16 h-screen overflow-y-auto pb-20"
+      >
+        <div class="px-8 pt-10 pb-8 space-y-6 flex flex-col text-center">
+          <a href="about.html" class="text-white text-lg font-serif"
+            >The Team</a
+          >
+          <a href="experiences.html" class="text-white text-lg font-serif"
+            >Services Catalog</a
+          >
+          <a href="blog/index.html" class="text-white text-lg font-serif"
+            >Journal</a
+          >
+          <a href="terms.html" class="text-gray-400 text-sm">Terms & Policy</a>
+          <a
+            href="https://wa.me/573044301112?text=Hi!%20I%27m%20browsing%20the%20Cartagena%20Kitesurf%20Center%20catalog.%20Can%20you%20help%20me%20choose%20the%20right%20experience%20for%20my%20level%20and%20schedule%3F"
+            class="bg-brand-gold text-brand-navy py-4 font-bold mt-4 rounded-sm w-full"
+            >CONTACT CONCIERGE</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Content (Updated with Background Image) -->
+    <header
+      class="relative bg-brand-navy text-white pt-48 pb-20 px-6 text-center overflow-hidden"
+    >
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="images/jump.webp"
+          alt="Kitesurf Experience"
+          class="w-full h-full object-cover opacity-40"
+        />
+        <div class="absolute inset-0 bg-brand-navy/60"></div>
+      </div>
+
+      <div class="relative z-10">
+        <span
+          class="text-brand-gold font-bold uppercase tracking-[0.2em] text-xs block mb-4"
+          >The Collection</span
+        >
+        <h1 class="font-serif text-4xl md:text-6xl mb-4">Our Experiences</h1>
+        <p class="text-gray-200 font-light max-w-2xl mx-auto">
+          Choose your adventure. All services include certified instructors,
+          premium gear, <strong>hydration included</strong>, and the Marine Tech
+          safety guarantee.
+        </p>
+      </div>
+    </header>
+
+    <!-- Filter/Menu (Anchor Links) -->
+    <div
+      class="bg-white border-b border-gray-200 sticky top-16 z-40 shadow-sm overflow-x-auto"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex space-x-8 min-w-max justify-center"
+      >
+        <a
+          href="#courses"
+          class="text-brand-navy text-xs font-bold uppercase tracking-widest hover:text-brand-gold"
+          >Kite Courses</a
+        >
+        <a
+          href="#rentals"
+          class="text-brand-navy text-xs font-bold uppercase tracking-widest hover:text-brand-gold"
+          >Gear Rentals</a
+        >
+        <a
+          href="#adventure"
+          class="text-brand-navy text-xs font-bold uppercase tracking-widest hover:text-brand-gold"
+          >Adventures</a
+        >
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-7xl mx-auto px-6 py-16 space-y-24">
+      <!-- SECTION 1: COURSES -->
+      <section id="courses">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="h-px bg-gray-300 flex-grow"></div>
+          <h2 class="font-serif text-3xl text-brand-navy">
+            Kitesurfing Courses
+          </h2>
+          <div class="h-px bg-gray-300 flex-grow"></div>
+        </div>
+
+        <div class="grid gap-12">
+          <!-- The Rider (Best Seller) -->
+          <div
+            id="rider"
+            class="bg-white rounded-sm shadow-xl overflow-hidden flex flex-col md:flex-row border border-gray-100 group"
+          >
+            <div class="md:w-1/2 relative h-64 md:h-auto overflow-hidden">
+              <img
+                src="images/pro.webp"
+                loading="lazy"
+                alt="The Rider Course"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+              <div
+                class="absolute top-4 left-4 bg-brand-gold text-brand-navy px-3 py-1 text-[10px] font-bold uppercase tracking-widest"
+              >
+                Most Popular
+              </div>
+            </div>
+            <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+              <h3 class="font-serif text-3xl text-brand-navy mb-2">
+                The Rider (8 Hours)
+              </h3>
+              <p class="text-gray-500 font-light text-sm mb-6 leading-relaxed">
+                This is our comprehensive certification course. Designed to take
+                you from a complete beginner to an independent rider. We break
+                down the 8 hours over 2-4 days.
+              </p>
+
+              <div
+                class="grid grid-cols-2 gap-y-2 gap-x-4 text-xs text-gray-600 mb-8 border-t border-gray-100 pt-6"
+              >
+                <div class="flex items-center">
+                  <i class="fas fa-check text-brand-gold mr-2"></i>Full Gear
+                  Included
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-glass-water text-brand-gold mr-2"></i
+                  >Hydration Included
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-id-card text-brand-gold mr-2"></i>IKO
+                  Certification
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-calendar-alt text-brand-gold mr-2"></i
+                  >Flexible Schedule
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col md:flex-row items-center justify-between mt-auto gap-4"
+              >
+                <div class="price-tag text-4xl text-brand-navy font-bold">
+                  $680
+                  <span class="text-sm font-sans font-normal text-gray-400"
+                    >USD</span
+                  >
+                </div>
+                <div class="flex gap-2 w-full md:w-auto">
+                  <button
+                    onclick="openModal('rider')"
+                    class="flex-grow md:flex-initial text-center border border-brand-navy text-brand-navy px-4 py-3 rounded-sm font-bold uppercase text-[10px] tracking-widest hover:bg-gray-100 transition"
+                  >
+                    More Info
+                  </button>
+                  <a
+                    href="https://wa.me/573044301112?text=Hi!%20I%20want%20to%20book%20The%20Rider%20Course%20(8H%20-%20%24680%20USD)%20at%20Cartagena%20Kitesurf%20Center.%20My%20goal%20is%20to%20become%20an%20independent%20kiter.%20What%20dates%20are%20available%20and%20what%27s%20the%20deposit%20process%3F"
+                    class="flex-grow md:flex-initial text-center bg-brand-navy text-white px-8 py-3 rounded-sm font-bold uppercase text-[10px] tracking-widest hover:bg-brand-gold transition"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Discovery -->
+          <div
+            id="discovery"
+            class="bg-white rounded-sm shadow-lg overflow-hidden flex flex-col md:flex-row-reverse border border-gray-100 group"
+          >
+            <div class="md:w-1/3 relative h-56 md:h-auto overflow-hidden">
+              <img
+                src="images/class.webp"
+                loading="lazy"
+                alt="Discovery Class"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+            </div>
+            <div class="md:w-2/3 p-8 flex flex-col justify-center">
+              <h3 class="font-serif text-2xl text-brand-navy mb-2">
+                Discovery (2 Hours)
+              </h3>
+              <p class="text-gray-500 font-light text-sm mb-6">
+                A safe and fun introduction. You will learn wind theory, safety
+                systems, setup, and body dragging.
+              </p>
+              <div class="flex gap-4 mb-6 text-xs text-gray-500">
+                <span class="flex items-center"
+                  ><i class="fas fa-glass-water text-brand-gold mr-2"></i
+                  >Hydration Included</span
+                >
+                <span class="flex items-center"
+                  ><i class="fas fa-clock text-brand-gold mr-2"></i>2
+                  Hours</span
+                >
+              </div>
+              <div class="flex flex-col md:flex-row items-center gap-6">
+                <div class="price-tag text-2xl text-brand-navy font-bold">
+                  $180
+                  <span class="text-sm font-sans font-normal text-gray-400"
+                    >USD</span
+                  >
+                </div>
+                <div class="flex gap-3 w-full md:w-auto">
+                  <button
+                    onclick="openModal('discovery')"
+                    class="px-4 py-2 border border-gray-300 text-gray-600 rounded-sm text-[10px] font-bold uppercase tracking-widest hover:bg-gray-50"
+                  >
+                    Details
+                  </button>
+                  <a
+                    href="https://wa.me/573044301112?text=Hi!%20I%20want%20to%20book%20a%20Discovery%20Session%20(2H%20-%20%24180%20USD)%20at%20Cartagena%20Kitesurf%20Center.%20It%20will%20be%20my%20first%20time%20kitesurfing.%20What%20dates%20are%20available%3F"
+                    class="px-6 py-2 bg-brand-navy text-white rounded-sm text-[10px] font-bold uppercase tracking-widest hover:bg-brand-gold transition"
+                    >Book</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advanced & Elite Grid -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Advanced -->
+            <div
+              id="advanced"
+              class="bg-white p-8 shadow-lg border-t-4 border-gray-300 flex flex-col"
+            >
+              <img
+                src="images/avanzado.webp"
+                loading="lazy"
+                alt="Advanced Kiter"
+                class="w-full h-48 object-cover mb-6 rounded-sm"
+              />
+              <h3 class="font-serif text-xl text-brand-navy mb-2">
+                Advanced (10 Hours)
+              </h3>
+              <p class="text-gray-500 text-xs mb-6 flex-grow">
+                Perfect for mastering the water start, riding upwind, or first
+                transitions.
+              </p>
+              <div class="flex justify-between items-end mt-auto">
+                <div>
+                  <div class="price-tag text-2xl text-brand-navy font-bold">
+                    $820
+                    <span class="text-sm font-sans font-normal text-gray-400"
+                      >USD</span
+                    >
+                  </div>
+                  <span class="text-[10px] text-brand-gold"
+                    ><i class="fas fa-glass-water mr-1"></i>Hydration
+                    Incl.</span
+                  >
+                </div>
+                <div class="flex gap-2">
+                  <button
+                    onclick="openModal('advanced')"
+                    class="border border-gray-300 text-gray-500 px-4 py-2 rounded-sm font-bold text-xs uppercase hover:bg-gray-50 transition"
+                  >
+                    Details
+                  </button>
+                  <a
+                    href="https://wa.me/573044301112?text=Hi!%20I%27m%20interested%20in%20the%20Advanced%20Course%20(10H%20-%20%24820%20USD)%20at%20Cartagena%20Kitesurf%20Center.%20I%20have%20basic%20kite%20experience%20and%20want%20to%20improve.%20What%27s%20the%20availability%3F"
+                    class="bg-gray-200 text-brand-navy px-6 py-2 rounded-sm font-bold text-xs uppercase hover:bg-brand-navy hover:text-white transition"
+                    >Book</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Elite VIP -->
+            <div
+              id="elite"
+              class="bg-brand-navy shadow-lg border-t-4 border-brand-gold text-white flex flex-col relative overflow-hidden group"
+            >
+              <div class="h-48 relative overflow-hidden">
+                <img
+                  src="images/salto.webp"
+                  loading="lazy"
+                  alt="Elite Kitesurfing"
+                  class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition duration-700"
+                />
+                <div class="absolute inset-0 bg-brand-navy/30"></div>
+                <span
+                  class="absolute top-0 right-0 bg-brand-gold text-brand-navy text-[9px] font-bold px-3 py-1 uppercase"
+                  >VIP Experience</span
+                >
+              </div>
+              <div class="p-8 flex flex-col flex-grow">
+                <h3 class="font-serif text-xl text-brand-gold mb-2">
+                  The Elite (12 Hours)
+                </h3>
+                <p class="text-gray-300 text-xs mb-6 leading-relaxed flex-grow">
+                  Global readiness. Includes video analysis, transport to best
+                  spots, photoshoot, and hydration.
+                </p>
+                <div class="flex justify-between items-end mt-auto">
+                  <div class="price-tag text-2xl text-white font-bold">
+                    $950
+                    <span class="text-sm font-sans font-normal text-white"
+                      >USD</span
+                    >
+                  </div>
+                  <div class="flex gap-2">
+                    <button
+                      onclick="openModal('elite')"
+                      class="border border-white/30 text-white px-4 py-2 rounded-sm font-bold text-xs uppercase hover:bg-white/10 transition"
+                    >
+                      Details
+                    </button>
+                    <a
+                      href="https://wa.me/573044301112?text=Hi!%20I%20want%20to%20book%20The%20Elite%20VIP%20Experience%20(12H%20-%20%24950%20USD)%20at%20Cartagena%20Kitesurf%20Center.%20I%27d%20like%20details%20on%20the%20video%20analysis%2C%20private%20transport%2C%20and%20photoshoot.%20What%20dates%20are%20open%3F"
+                      class="bg-brand-gold text-brand-navy px-6 py-2 rounded-sm font-bold text-xs uppercase hover:bg-white hover:text-brand-navy transition"
+                      >Book VIP</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1H, Group & Kite Foil -->
+          <div class="mt-8 grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <!-- 1H Lesson -->
+            <div
+              id="lesson-1h"
+              class="bg-white p-6 rounded border border-gray-200 flex flex-col hover:shadow-lg transition group"
+            >
+              <div class="mb-4 relative w-full h-48 overflow-hidden rounded-sm">
+                <img
+                  src="images/kite.webp"
+                  loading="lazy"
+                  alt="1 Hour Lesson"
+                  class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                />
+              </div>
+              <div class="mb-2">
+                <h3 class="font-bold text-brand-navy">1 Hour Lesson</h3>
+                <p class="text-xs text-gray-500">Refresher or specific skill</p>
+              </div>
+              <div class="mt-auto">
+                <div class="flex justify-between items-baseline mb-3">
+                  <span
+                    class="price-tag block font-bold text-xl text-brand-navy"
+                    >$95</span
+                  >
+                  <span class="text-[10px] text-brand-gold"
+                    ><i class="fas fa-glass-water"></i> Hydration</span
+                  >
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <button
+                    onclick="openModal('lesson-1h')"
+                    class="text-center border border-gray-200 text-gray-500 py-2 rounded-sm text-[10px] font-bold uppercase hover:bg-gray-50"
+                  >
+                    Info
+                  </button>
+                  <a
+                    href="https://wa.me/573044301112?text=Hi!%20I%27d%20like%20to%20book%20a%201-Hour%20Refresher%20Lesson%20(%2495%20USD)%20at%20Cartagena%20Kitesurf%20Center.%20I%20want%20to%20work%20on%20a%20specific%20skill.%20What%20times%20are%20available%3F"
+                    class="text-center bg-brand-navy text-white py-2 rounded-sm text-[10px] font-bold uppercase hover:bg-brand-gold transition"
+                    >Book</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Group Lesson -->
+            <div
+              id="lesson-group"
+              class="bg-white p-6 rounded border border-gray-200 flex flex-col hover:shadow-lg transition group"
+            >
+              <div class="mb-4 relative w-full h-48 overflow-hidden rounded-sm">
+                <img
+                  src="images/grupal.webp"
+                  loading="lazy"
+                  alt="Group Lesson"
+                  class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                />
+              </div>
+              <div class="mb-2">
+                <h3 class="font-bold text-brand-navy">Group Lesson</h3>
+                <p class="text-xs text-gray-500">For couples (per person)</p>
+              </div>
+              <div class="mt-auto">
+                <div class="flex justify-between items-baseline mb-3">
+                  <span
+                    class="price-tag block font-bold text-xl text-brand-navy"
+                    >$75</span
+                  >
+                  <span class="text-[10px] text-brand-gold"
+                    ><i class="fas fa-glass-water"></i> Hydration</span
+                  >
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <button
+                    onclick="openModal('lesson-group')"
+                    class="text-center border border-gray-200 text-gray-500 py-2 rounded-sm text-[10px] font-bold uppercase hover:bg-gray-50"
+                  >
+                    Info
+                  </button>
+                  <a
+                    href="https://wa.me/573044301112?text=Hi!%20We%27re%20interested%20in%20a%20Group%20Lesson%20(%2475%20USD%20per%20person)%20at%20Cartagena%20Kitesurf%20Center.%20How%20many%20spots%20are%20available%20and%20what%20are%20the%20upcoming%20dates%3F"
+                    class="text-center bg-brand-navy text-white py-2 rounded-sm text-[10px] font-bold uppercase hover:bg-brand-gold transition"
+                    >Book</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Kite Foil -->
+            <div
+              id="lesson-foil"
+              class="bg-white p-6 rounded border border-gray-200 flex flex-col hover:shadow-lg transition group"
+            >
+              <div class="mb-4 relative w-full h-48 overflow-hidden rounded-sm">
+                <img
+                  src="images/transicion.webp"
+                  loading="lazy"
+                  alt="Kite Foil"
+                  class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                />
+              </div>
+              <div class="mb-2">
+                <h3 class="font-bold text-brand-navy">Kite Foil Lesson</h3>
+                <p class="text-xs text-gray-500">Fly above the water</p>
+              </div>
+              <div class="mt-auto">
+                <div class="flex justify-between items-baseline mb-3">
+                  <span
+                    class="price-tag block font-bold text-xl text-brand-navy"
+                    >$135</span
+                  >
+                  <span class="text-[10px] text-brand-gold"
+                    ><i class="fas fa-glass-water"></i> Hydration</span
+                  >
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <button
+                    onclick="openModal('lesson-foil')"
+                    class="text-center border border-gray-200 text-gray-500 py-2 rounded-sm text-[10px] font-bold uppercase hover:bg-gray-50"
+                  >
+                    Info
+                  </button>
+                  <a
+                    href="https://wa.me/573044301112?text=Hi!%20I%20want%20to%20book%20a%20Kite%20Foil%20Lesson%20(%24135%20USD)%20at%20Cartagena%20Kitesurf%20Center.%20I%27m%20already%20a%20kite%20rider%20ready%20for%20the%20next%20challenge.%20What%20are%20the%20prerequisites%20and%20availability%3F"
+                    class="text-center bg-brand-navy text-white py-2 rounded-sm text-[10px] font-bold uppercase hover:bg-brand-gold transition"
+                    >Book</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: ADVENTURE & RENTALS -->
+      <section id="rentals">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="h-px bg-gray-300 flex-grow"></div>
+          <h2 class="font-serif text-3xl text-brand-navy">
+            Adventures & Rentals
+          </h2>
+          <div class="h-px bg-gray-300 flex-grow"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="adventure">
+          <!-- Wing Foil -->
+          <div
+            id="wing-foil"
+            class="bg-white rounded-sm shadow-md overflow-hidden hover:shadow-xl transition border border-gray-100 group flex flex-col"
+          >
+            <div class="h-48 bg-gray-200 relative overflow-hidden">
+              <img
+                src="images/foil.webp"
+                loading="lazy"
+                alt="Wing Foil"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="font-bold text-brand-navy text-sm mb-1">
+                Wing Foil Lesson
+              </h3>
+              <p class="price-tag text-xl font-bold mb-4 text-brand-navy">
+                $95 <span class="text-xs font-sans font-normal">/hr</span>
+              </p>
+              <p class="text-[10px] text-gray-400 mb-4">
+                <i class="fas fa-glass-water text-brand-gold"></i> Hydration
+                Included
+              </p>
+              <button
+                onclick="openModal('wing-foil')"
+                class="mt-auto block w-full bg-brand-navy text-white text-center py-2 rounded-sm text-xs font-bold uppercase hover:bg-brand-gold transition"
+              >
+                See Details
+              </button>
+            </div>
+          </div>
+          <!-- SUP -->
+          <div
+            id="sup"
+            class="bg-white rounded-sm shadow-md overflow-hidden hover:shadow-xl transition border border-gray-100 group flex flex-col"
+          >
+            <div class="h-48 bg-gray-200 relative overflow-hidden">
+              <img
+                src="images/sup.webp"
+                loading="lazy"
+                alt="SUP Sunset"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="font-bold text-brand-navy text-sm mb-1">SUP Rental</h3>
+              <p class="price-tag text-xl font-bold mb-4 text-brand-navy">
+                $25 <span class="text-xs font-sans font-normal">/hr</span>
+              </p>
+              <p class="text-[10px] text-gray-400 mb-4">
+                <i class="fas fa-glass-water text-brand-gold"></i> Hydration
+                Included
+              </p>
+              <button
+                onclick="openModal('sup')"
+                class="mt-auto block w-full bg-brand-navy text-white text-center py-2 rounded-sm text-xs font-bold uppercase hover:bg-brand-gold transition"
+              >
+                See Details
+              </button>
+            </div>
+          </div>
+          <!-- Downwind -->
+          <div
+            id="downwind"
+            class="bg-brand-navy rounded-sm shadow-md overflow-hidden hover:shadow-xl transition border border-brand-navy group relative flex flex-col"
+          >
+            <div class="h-48 bg-gray-800 relative overflow-hidden">
+              <img
+                src="images/downwind.webp"
+                loading="lazy"
+                alt="Downwind"
+                class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow relative z-10">
+              <h3 class="font-bold text-white text-sm mb-1">Downwind Trip</h3>
+              <p class="price-tag text-xl font-bold mb-4 text-brand-gold">
+                $300
+                <span class="text-xs font-sans font-normal text-white"
+                  >/trip</span
+                >
+              </p>
+              <p class="text-[10px] text-gray-400 mb-4">
+                <i class="fas fa-glass-water text-brand-gold"></i> Hydration
+                Included
+              </p>
+              <button
+                onclick="openModal('downwind')"
+                class="mt-auto block w-full border border-white text-white text-center py-2 rounded-sm text-xs font-bold uppercase hover:bg-white hover:text-brand-navy transition"
+              >
+                See Details
+              </button>
+            </div>
+          </div>
+          <!-- Professional Photos -->
+          <div
+            id="photos"
+            class="bg-gray-100 rounded-sm shadow-md overflow-hidden hover:shadow-xl transition border border-gray-200 group flex flex-col"
+          >
+            <div class="h-48 bg-gray-200 relative overflow-hidden">
+              <img
+                src="images/pro.webp"
+                loading="lazy"
+                alt="Photos"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="font-bold text-brand-navy text-sm mb-1">
+                <i class="fas fa-camera text-brand-gold mr-1"></i> Pro Photos
+              </h3>
+              <p class="price-tag text-xl font-bold mb-4 text-brand-navy">
+                $35 <span class="text-xs font-sans font-normal">/session</span>
+              </p>
+              <button
+                onclick="openModal('photos')"
+                class="mt-auto block w-full bg-white border border-brand-navy text-brand-navy text-center py-2 rounded-sm text-xs font-bold uppercase hover:bg-brand-navy hover:text-white transition"
+              >
+                See Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rental Types Grid -->
+        <div class="grid md:grid-cols-3 gap-6 mt-12">
+          <!-- Rental + Supervision -->
+          <div
+            id="rental-supervision"
+            class="bg-white p-6 shadow-md border-t-2 border-brand-navy group"
+          >
+            <img
+              src="images/pareja.webp"
+              loading="lazy"
+              alt="Instructor Supervision"
+              class="w-full h-40 object-cover mb-4 rounded-sm"
+            />
+            <h4 class="font-bold text-lg text-brand-navy mb-2">
+              Rental + Supervision
+            </h4>
+            <p class="text-xs text-gray-500 mb-2">
+              Gear rental plus an instructor.
+            </p>
+            <p class="text-[10px] text-brand-gold mb-4">
+              <i class="fas fa-glass-water"></i> Hydration Included
+            </p>
+            <div class="price-tag text-2xl text-brand-navy font-bold mb-4">
+              $60 <span class="text-xs font-sans font-normal">/hr</span>
+            </div>
+            <button
+              onclick="openModal('rental-supervision')"
+              class="block w-full bg-brand-navy text-white text-center py-2 rounded-sm text-xs font-bold uppercase hover:bg-brand-gold transition"
+            >
+              See Details
+            </button>
+          </div>
+
+          <!-- Full Gear Rental -->
+          <div
+            id="rental-gear"
+            class="bg-white p-6 shadow-md border-t-2 border-brand-gold group"
+          >
+            <img
+              src="images/gear.webp"
+              loading="lazy"
+              alt="Kite Gear"
+              class="w-full h-40 object-cover mb-4 rounded-sm"
+            />
+            <h4 class="font-bold text-lg text-brand-navy mb-2">
+              Full Gear Rental
+            </h4>
+            <p class="text-xs text-gray-500 mb-2">
+              Latest Duotone/Cabrinha kites.
+            </p>
+            <p class="text-[10px] text-brand-gold mb-4">
+              <i class="fas fa-glass-water"></i> Hydration Included
+            </p>
+            <div class="price-tag text-2xl text-brand-navy font-bold mb-4">
+              $50 <span class="text-xs font-sans font-normal">/hr</span>
+            </div>
+            <button
+              onclick="openModal('rental-gear')"
+              class="block w-full bg-brand-navy text-white text-center py-2 rounded-sm text-xs font-bold uppercase hover:bg-brand-gold transition"
+            >
+              See Details
+            </button>
+          </div>
+
+          <!-- Supervision Only -->
+          <div
+            id="supervision"
+            class="bg-white p-6 shadow-md border-t-2 border-gray-300 group"
+          >
+            <img
+              src="images/grupal.webp"
+              loading="lazy"
+              alt="Supervision"
+              class="w-full h-40 object-cover mb-4 rounded-sm"
+            />
+            <h4 class="font-bold text-lg text-brand-navy mb-2">
+              Supervision Only
+            </h4>
+            <p class="text-xs text-gray-500 mb-2">Your gear, our watch.</p>
+            <p class="text-[10px] text-brand-gold mb-4">
+              <i class="fas fa-glass-water"></i> Hydration Included
+            </p>
+            <div class="price-tag text-2xl text-brand-navy font-bold mb-4">
+              $25 <span class="text-xs font-sans font-normal">/hr</span>
+            </div>
+            <button
+              onclick="openModal('supervision')"
+              class="block w-full bg-white border border-brand-navy text-brand-navy text-center py-2 rounded-sm text-xs font-bold uppercase hover:bg-brand-navy hover:text-white transition"
+            >
+              See Details
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (Master) -->
+    <footer
+      class="bg-brand-navy text-white py-12 border-t border-white/10 mt-auto"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-sm"
+      >
+        <div class="col-span-2 md:col-span-2">
+          <span
+            class="font-serif text-2xl tracking-widest font-bold text-brand-gold"
+            >MARINE TECH</span
+          >
+          <p
+            class="text-gray-400 mt-4 max-w-sm leading-relaxed font-light text-xs md:text-sm"
+          >
+            The leading authority in water sports tourism in Cartagena. Founded
+            on the principles of discipline, safety, and excellence.
+          </p>
+          <div class="mt-6 flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition"
+              ><i class="fab fa-instagram text-xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition"
+              ><i class="fab fa-facebook text-xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition"
+              ><i class="fab fa-tripadvisor text-xl"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="col-span-1">
+          <h4
+            class="font-bold uppercase tracking-widest mb-4 text-brand-gold text-xs"
+          >
+            Explore
+          </h4>
+          <ul class="space-y-2 text-gray-400 font-light text-xs">
+            <li>
+              <a href="about.html" class="hover:text-white transition"
+                >The Team</a
+              >
+            </li>
+            <li>
+              <a href="experiences.html" class="hover:text-white transition"
+                >All Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="experiences.html#rentals"
+                class="hover:text-white transition"
+                >Rentals</a
+              >
+            </li>
+            <li>
+              <a href="blog/index.html" class="hover:text-white transition"
+                >Journal</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-span-1">
+          <h4
+            class="font-bold uppercase tracking-widest mb-4 text-brand-gold text-xs"
+          >
+            Legal
+          </h4>
+          <ul class="space-y-2 text-gray-400 font-light text-xs">
+            <li>
+              <a href="terms.html" class="hover:text-white transition">Terms</a>
+            </li>
+            <li>
+              <a href="terms.html#privacy" class="hover:text-white transition"
+                >Privacy</a
+              >
+            </li>
+            <li>
+              <a
+                href="terms.html#cancellation"
+                class="hover:text-white transition"
+                >Refunds</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t border-white/10 mt-8 pt-6 text-center text-gray-500 text-[10px] uppercase tracking-widest"
+      >
+        &copy; 2024 Marine Tech Cartagena. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/573044301112?text=Hi!%20I%27m%20looking%20at%20the%20Cartagena%20Kitesurf%20Center%20catalog%20and%20I%27d%20love%20to%20book%20a%20VIP%20experience.%20Can%20you%20tell%20me%20about%20current%20availability%20and%20how%20to%20secure%20my%20spot%3F"
+      class="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-1 group"
+    >
+      <img
+        src="images/whatsapp-logo.png"
+        alt="Chat with Concierge"
+        class="w-14 h-14 md:w-16 md:h-16 transition-transform duration-300 group-hover:scale-110 drop-shadow-2xl"
+      />
+      <span
+        class="bg-brand-navy text-brand-gold text-[9px] font-bold uppercase tracking-widest px-2 py-1 rounded-sm shadow-lg whitespace-nowrap opacity-90 group-hover:opacity-100 transition"
+      >
+        Book Your Class Now
+      </span>
+    </a>
+
+    <!-- GENERIC MODAL -->
+    <div
+      id="serviceModal"
+      class="fixed inset-0 z-[100] hidden bg-brand-navy/80 backdrop-blur-sm flex items-center justify-center p-4 modal"
+    >
+      <div
+        class="bg-white w-full max-w-2xl rounded-sm shadow-2xl overflow-hidden modal-content flex flex-col max-h-[90vh]"
+      >
+        <!-- Header -->
+        <div class="bg-brand-navy text-white p-6 relative">
+          <button
+            onclick="closeModal()"
+            class="absolute top-4 right-4 text-gray-400 hover:text-white transition"
+          >
+            <i class="fas fa-times text-xl"></i>
+          </button>
+          <span
+            class="text-brand-gold text-[10px] font-bold uppercase tracking-[0.2em] block mb-1"
+            id="modal-subtitle"
+            >Course Details</span
+          >
+          <h3 class="font-serif text-2xl md:text-3xl" id="modal-title">
+            Title Here
+          </h3>
+        </div>
+
+        <!-- Scrollable Content -->
+        <div class="p-8 overflow-y-auto custom-scrollbar">
+          <p class="text-gray-600 text-sm leading-relaxed mb-6" id="modal-desc">
+            Description goes here.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-6">
+            <div>
+              <h4
+                class="text-brand-navy font-bold text-xs uppercase tracking-widest mb-3 border-b border-gray-200 pb-1"
+              >
+                Included
+              </h4>
+              <ul class="text-sm text-gray-500 space-y-2" id="modal-features">
+                <!-- Features populated by JS -->
+              </ul>
+            </div>
+            <div>
+              <h4
+                class="text-brand-navy font-bold text-xs uppercase tracking-widest mb-3 border-b border-gray-200 pb-1"
+              >
+                Perfect For
+              </h4>
+              <p class="text-sm text-gray-500" id="modal-perfect">
+                Target audience info.
+              </p>
+
+              <div class="mt-6">
+                <h4
+                  class="text-brand-navy font-bold text-xs uppercase tracking-widest mb-3 border-b border-gray-200 pb-1"
+                >
+                  Price Breakdown
+                </h4>
+                <div class="flex justify-between items-baseline">
+                  <span class="text-gray-500 text-sm">Total:</span>
+                  <span
+                    class="price-tag text-2xl text-brand-navy font-bold"
+                    id="modal-price"
+                    >$0</span
+                  >
+                </div>
+                <div class="flex justify-between items-baseline mt-1">
+                  <span class="text-gray-400 text-xs">Deposit to Book:</span>
+                  <span
+                    class="text-gray-600 font-bold text-sm"
+                    id="modal-deposit"
+                    >$0</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-50 p-4 border-l-4 border-brand-gold text-xs text-gray-500 mb-2"
+          >
+            <i class="fas fa-info-circle mr-2"></i> All bookings are confirmed
+            via WhatsApp. Payment (PayPal) details will be provided by our
+            concierge.
+          </div>
+        </div>
+
+        <!-- Footer / CTA -->
+        <div
+          class="p-6 border-t border-gray-100 bg-gray-50 flex justify-end gap-4"
+        >
+          <button
+            onclick="closeModal()"
+            class="px-6 py-3 border border-gray-300 text-gray-500 font-bold text-xs uppercase rounded-sm hover:bg-gray-100 transition"
+          >
+            Close
+          </button>
+          <a
+            href="#"
+            id="modal-cta"
+            class="px-8 py-3 bg-brand-navy text-white font-bold text-xs uppercase rounded-sm hover:bg-brand-gold transition shadow-lg flex items-center"
+          >
+            <i class="fab fa-whatsapp mr-2 text-lg"></i> Book on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+
+      // --- SERVICE DATA (Easy to edit) ---
+      const services = {
+        rider: {
+          title: "The Rider Course (8 Hours)",
+          subtitle: "Zero to Hero Certification",
+          description:
+            "This is our signature IKO certification course designed to make you an independent kiter. We split the 8 hours over 2 to 4 days depending on your energy and wind conditions. You will learn wind theory, safety systems setup, body dragging (power control), and the water start. By the end, you will be riding on the board with confidence.",
+          features: [
+            "Complete Equipment (Kite, Board, Harness, Vest)",
+            "IKO Certified Instructor",
+            "Hydration Included (Water & Electrolytes)",
+            "IKO Certification Card (Worldwide Validity)",
+          ],
+          perfectFor:
+            "Beginners who are committed to learning the sport properly and want to ride independently.",
+          price: "$680 USD",
+          deposit: "$152 USD",
+          whatsappMessage:
+            "Hi! I want to book The Rider Course (8H) at Cartagena Kitesurf Center. My goal is to ride independently. Please share available dates and the deposit process.",
+        },
+        discovery: {
+          title: "Discovery Session (2 Hours)",
+          subtitle: "First Contact",
+          description:
+            "Not sure if kitesurfing is for you? This 2-hour session is the perfect teaser. You will spend 1 hour on land learning how to fly the kite and control the power zones, and 1 hour in the water practicing 'Body Drag'. It is safe, fun, and adrenaline-filled.",
+          features: [
+            "Kite Control Fundamentals",
+            "Safety Systems Training",
+            "Body Drag in Water",
+            "Hydration Included",
+            "All Gear Provided",
+          ],
+          perfectFor:
+            "Curious travelers or those with limited time who want to feel the power of the wind.",
+          price: "$180 USD",
+          deposit: "$38 USD",
+          whatsappMessage:
+            "Hi! I'd like to book the Discovery Session (2H) at Cartagena Kitesurf Center. It'll be my first time on a kite — very excited! What dates are open?",
+        },
+        advanced: {
+          title: "Advanced Coaching (10 Hours)",
+          subtitle: "Next Level Skills",
+          description:
+            "Stuck on your water start? Can't ride upwind? This course is for students who have taken lessons before but aren't fully independent yet. We focus on your specific sticking points to get you riding confidently.",
+          features: [
+            "Advanced Water Start Techniques",
+            "Upwind Riding Logic",
+            "Transition Fundamentals",
+            "Hydration Included",
+          ],
+          perfectFor:
+            "Intermediate learners who need that extra push to become independent.",
+          price: "$820 USD",
+          deposit: "$180 USD",
+          whatsappMessage:
+            "Hi! I want to book the Advanced Course (10H) at Cartagena Kitesurf Center. I've taken basic lessons before but need help with water starts and upwind riding. What's available?",
+        },
+        elite: {
+          title: "The Elite Experience (12 Hours)",
+          subtitle: "VIP All-Inclusive",
+          description:
+            "The ultimate package for those who want luxury and results. Includes everything in the Rider course plus premium perks: video analysis to correct mistakes faster, transport to the best wind spots, and a professional photoshoot of your progress.",
+          features: [
+            "12 Hours of Private Instruction",
+            "Video Analysis Sessions",
+            "Private Transport to Spots",
+            "Professional Photoshoot",
+            "Hydration & Snacks Included",
+          ],
+          perfectFor:
+            "Students who value speed of learning and premium service.",
+          price: "$950 USD",
+          deposit: "$200 USD",
+          whatsappMessage:
+            "Hi! I'm interested in The Elite VIP Experience (12H) at Cartagena Kitesurf Center. I'd love details on the video analysis, private transport, and photoshoot. What dates are open?",
+        },
+        "lesson-1h": {
+          title: "1 Hour Refresher",
+          subtitle: "Specific Skill Focus",
+          description:
+            "Just need a quick tune-up? Maybe you haven't kited in a year, or you just want to learn how to jump. Book a single hour with an expert to focus on one specific goal.",
+          features: ["Private Instruction", "Hydration Included"],
+          perfectFor: "Refreshers or specific tricks (Jumps, Transitions).",
+          price: "$95 USD",
+          deposit: "$23 USD",
+          whatsappMessage:
+            "Hi! I'd like to book a 1-Hour Refresher at Cartagena Kitesurf Center. I have a specific skill I want to work on. What time slots are available this week?",
+        },
+        "lesson-group": {
+          title: "Group Lesson",
+          subtitle: "Share the Fun",
+          description:
+            "Learning with a friend or partner is a great way to share the experience. You will share one kite, taking turns. While one rests and observes (learning by watching), the other practices.",
+          features: [
+            "1 Kite Shared between 2 Students",
+            "Instructor Feedback",
+            "Hydration Included",
+          ],
+          perfectFor:
+            "Couples or friends on a budget who want to learn together.",
+          price: "$75 USD (Per Person)",
+          deposit: "$19 USD",
+          whatsappMessage:
+            "Hi! We'd like to book a Group Lesson at Cartagena Kitesurf Center. We're 2 people learning together. What are the upcoming available dates?",
+        },
+        "lesson-foil": {
+          title: "Kite Foil Lesson",
+          subtitle: "Hydrofoil Mastery",
+          description:
+            "Learn to fly above the water. Foiling allows you to ride in extremely light wind. It is technical and challenging but incredibly rewarding. Requires previous kite experience.",
+          features: [
+            "Foil Board & Mast Setup",
+            "Boat Support (Optional)",
+            "Hydration Included",
+          ],
+          perfectFor: "Experienced kiters looking for a new challenge.",
+          price: "$135 USD",
+          deposit: "$38 USD",
+          whatsappMessage:
+            "Hi! I want to book a Kite Foil Lesson at Cartagena Kitesurf Center. I'm an experienced kiter ready to fly above the water. What are the requirements and available schedule?",
+        },
+        "wing-foil": {
+          title: "Wing Foil Lesson",
+          subtitle: "The New Trend",
+          description:
+            "Combine a handheld wing with a hydrofoil board. It's safe, requires less space than kiting, and feels like pure surfing. We often start with a tow-in session behind a boat to master the board balance.",
+          features: [
+            "Wing & Foil Board",
+            "Helmet & Vest",
+            "Tow-in capability",
+            "Hydration Included",
+          ],
+          perfectFor:
+            "Surfers or anyone wanting a low-line-tangle alternative.",
+          price: "$95 USD / Hour",
+          deposit: "$25 USD",
+          whatsappMessage:
+            "Hi! I'm interested in a Wing Foil Lesson at Cartagena Kitesurf Center. I have a surfing background and want to try this new discipline. What's the availability?",
+        },
+        sup: {
+          title: "Stand Up Paddle (SUP)",
+          subtitle: "Relax & Explore",
+          description:
+            "<strong>Perfect for everyone. No previous experience required.</strong> Enjoy a relaxing session regardless of your fitness level. Paddle through the calm morning ocean or explore the nearby mangrove tunnels at sunset.",
+          features: [
+            "Premium SUP Board & Paddle",
+            "Life Vest",
+            "Waterproof Phone Case",
+            "Hydration Included",
+          ],
+          perfectFor: "Families, couples, and rest days.",
+          price: "$25 USD / Hour",
+          deposit: "$10 USD",
+          whatsappMessage:
+            "Hi! I'd like to rent a SUP board at Cartagena Kitesurf Center. Can you tell me about available time slots, routes, and whether guided options are available?",
+        },
+        downwind: {
+          title: "Downwind Expedition",
+          subtitle: "Baru to Rosario Islands",
+          description:
+            "A full-day adventure. We travel by private transport to Playa Blanca or Baru, set up our kites, and ride downwind across the open ocean to the Rosario Islands. Includes a support boat and lunch.",
+          features: [
+            "Private Transport",
+            "Support Boat",
+            "Island Lunch Included",
+            "Hydration Included",
+            "Guide on water",
+          ],
+          perfectFor: "Groups of 5+ Independent Riders (IKO Level 3+).",
+          price: "$300 USD / Person",
+          deposit: "$50 USD",
+          whatsappMessage:
+            "Hi! I'm very interested in the Downwind Expedition (Baru to Rosario Islands) at Cartagena Kitesurf Center. We're a group of riders. When is the next trip and how many spots are left?",
+        },
+        photos: {
+          title: "Professional Photography",
+          subtitle: "Capture the Moment",
+          description:
+            "Don't rely on blurry GoPro selfies. Our photographer uses telephoto lenses to capture your best action shots from the shore or boat. You get a package of high-res edited photos.",
+          features: [
+            "High-Res Edited Photos",
+            "Action & Lifestyle Shots",
+            "Delivery via Cloud Link",
+          ],
+          perfectFor: "Everyone who wants a killer Instagram feed.",
+          price: "$35 USD / Session",
+          deposit: "$10 USD",
+          whatsappMessage:
+            "Hi! I'd like to book a Professional Photography Session at Cartagena Kitesurf Center. I want great action shots during my kite session. How does it work and what's included?",
+        },
+        "rental-supervision": {
+          title: "Rental + Supervision",
+          subtitle: "Safety Watch",
+          description:
+            "Rent our gear, but keep an instructor nearby. We help you launch, land, and keep an eye on you while you ride. Perfect if you are independent but new to the spot.",
+          features: [
+            "Full Gear Rental",
+            "Assisted Launch/Land",
+            "Safety Watch",
+            "Hydration Included",
+          ],
+          perfectFor: "Independent riders who want extra safety.",
+          price: "$60 USD / Hour",
+          deposit: "$15 USD",
+          whatsappMessage:
+            "Hi! I want to book Rental + Supervision at Cartagena Kitesurf Center. I'm an independent rider but new to this spot and want safety support. What's available today?",
+        },
+        "rental-gear": {
+          title: "Full Gear Rental",
+          subtitle: "Premium Equipment",
+          description:
+            "Ride the latest Duotone and Cabrinha gear. We select the right kite size for the day's conditions. You must be an independent rider (able to ride upwind) to rent without supervision.",
+          features: [
+            "Kite, Bar, Board, Harness",
+            "Latest Models (Renewed Annually)",
+            "Hydration Included",
+          ],
+          perfectFor: "IKO Level 3 Riders.",
+          price: "$50 USD / Hour",
+          deposit: "$15 USD",
+          whatsappMessage:
+            "Hi! I'd like to rent Full Gear (kite, bar, board, harness) at Cartagena Kitesurf Center. I'm an experienced independent rider. What kite sizes and brands do you have available?",
+        },
+        supervision: {
+          title: "Supervision Only",
+          subtitle: "Your Gear, Our Eyes",
+          description:
+            "Bring your own gear, but use our beach assistance. We help you set up, launch, land, and store your gear. Plus, you get access to our hydration station.",
+          features: [
+            "Launch/Land Assist",
+            "Storage",
+            "Rescue if needed",
+            "Hydration Included",
+          ],
+          perfectFor: "Travelers with their own quiver.",
+          price: "$25 USD / Hour",
+          deposit: "$10 USD",
+          whatsappMessage:
+            "Hi! I want to book Supervision Only at Cartagena Kitesurf Center. I have my own gear but need launch/land assist and safety watch. What are the rates and availability?",
+        },
+      };
+
+      // --- MODAL LOGIC ---
+      const modal = document.getElementById("serviceModal");
+      const mTitle = document.getElementById("modal-title");
+      const mSubtitle = document.getElementById("modal-subtitle");
+      const mDesc = document.getElementById("modal-desc");
+      const mFeatures = document.getElementById("modal-features");
+      const mPerfect = document.getElementById("modal-perfect");
+      const mPrice = document.getElementById("modal-price");
+      const mDeposit = document.getElementById("modal-deposit");
+      const mCta = document.getElementById("modal-cta");
+
+      function openModal(serviceId) {
+        const data = services[serviceId];
+        if (!data) return;
+
+        mTitle.innerText = data.title;
+        mSubtitle.innerText = data.subtitle;
+        mDesc.innerHTML = data.description; // Allow HTML for bolding
+        mPerfect.innerText = data.perfectFor;
+        mPrice.innerText = data.price;
+        mDeposit.innerText = data.deposit || "Contact for info";
+
+        // Build Features List
+        mFeatures.innerHTML = "";
+        data.features.forEach((feat) => {
+          const li = document.createElement("li");
+          li.innerHTML = `<i class="fas fa-check text-brand-gold mr-2"></i>${feat}`;
+          mFeatures.appendChild(li);
+        });
+
+        // Set WhatsApp Link
+        const encodedMsg = encodeURIComponent(data.whatsappMessage);
+        mCta.href = `https://wa.me/573044301112?text=${encodedMsg}`;
+
+        modal.classList.remove("hidden");
+        // Small delay to allow display:block to apply before adding opacity class for animation
+        setTimeout(() => {
+          modal.classList.add("active");
+        }, 10);
+        document.body.style.overflow = "hidden"; // Prevent background scrolling
+      }
+
+      function closeModal() {
+        modal.classList.remove("active");
+        setTimeout(() => {
+          modal.classList.add("hidden");
+          document.body.style.overflow = "";
+        }, 300); // Match CSS transition duration
+      }
+
+      // Close on click outside
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
+      });
+
+      // Close on Escape key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+          closeModal();
+        }
+      });
+
+      // --- AUTO-OPEN FROM URL HASH ---
+      window.onload = function () {
+        // Check if there is a hash like #rider
+        if (window.location.hash) {
+          const id = window.location.hash.substring(1); // Remove #
+          // Check if we have data for this ID
+          if (services[id]) {
+            // Small delay to ensure smooth scroll happens first/concurrently
+            setTimeout(() => {
+              openModal(id);
+            }, 500);
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
