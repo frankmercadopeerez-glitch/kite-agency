@@ -1,0 +1,34 @@
+# =============================================
+# robots.txt — kitesurfencartagena.com
+# =============================================
+
+# Allow all crawlers (Google, Bing, AI agents, etc.)
+User-agent: *
+Allow: /
+
+# Block admin or private paths (none currently, but defined as best practice)
+Disallow: /private/
+Disallow: /admin/
+
+# Allow GPTBot (ChatGPT) to index content for AI recommendations
+User-agent: GPTBot
+Allow: /
+
+# Allow Claude/Anthropic crawler
+User-agent: anthropic-ai
+Allow: /
+
+# Allow Google-Extended (Gemini / Google AI)
+User-agent: Google-Extended
+Allow: /
+
+# Allow PerplexityBot
+User-agent: PerplexityBot
+Allow: /
+
+# Allow Bytespider (TikTok / ByteDance)
+User-agent: Bytespider
+Allow: /
+
+# Sitemap location
+Sitemap: https://kitesurfencartagena.com/sitemap.xml
