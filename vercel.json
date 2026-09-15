@@ -2,5 +2,18 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "outputDirectory": ".",
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/about.html", "destination": "/metodologia-editorial/", "permanent": true },
+    { "source": "/experiences.html", "destination": "/cursos-kitesurf/", "permanent": true },
+    { "source": "/blog/best-time-kitesurf-cartagena/", "destination": "/blog/best-time/", "permanent": true },
+    { "source": "/blog/first-kitesurf-jump-guide/", "destination": "/blog/first-lesson/", "permanent": true },
+    { "source": "/blog/how-long-to-learn-kitesurfing/", "destination": "/blog/how-long/", "permanent": true },
+    { "source": "/blog/kite-wing-foil-differences/", "destination": "/blog/kite-vs-wing/", "permanent": true },
+    { "source": "/blog/kitesurf-la-boquilla-spot-guide/", "destination": "/blog/la-boquilla-guide/", "permanent": true },
+    { "source": "/blog/kitesurf-packing-list/", "destination": "/blog/packing-list/", "permanent": true },
+    { "source": "/blog/kitesurfing-for-beginners-cartagena/", "destination": "/blog/first-lesson/", "permanent": true },
+    { "source": "/blog/safety-tips-cartagena/", "destination": "/blog/safety-checklist/", "permanent": true },
+    { "source": "/blog/top-water-sports-cartagena/", "destination": "/blog/kite-vs-wing/", "permanent": true }
+  ]
 }

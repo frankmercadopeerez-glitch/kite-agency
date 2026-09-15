@@ -17,10 +17,27 @@ walk(root);
 const errors = [];
 const warnings = [];
 const canonicalUrls = new Set();
+const expectedOrigin = "https://kite-agency.vercel.app";
+const redirectedOrInternal = new Set([
+  "about.html",
+  "experiences.html",
+  "terms.html",
+  "social/instagram/preview.html",
+  "blog/best-time-kitesurf-cartagena/index.html",
+  "blog/first-kitesurf-jump-guide/index.html",
+  "blog/how-long-to-learn-kitesurfing/index.html",
+  "blog/kite-wing-foil-differences/index.html",
+  "blog/kitesurf-la-boquilla-spot-guide/index.html",
+  "blog/kitesurf-packing-list/index.html",
+  "blog/kitesurfing-for-beginners-cartagena/index.html",
+  "blog/safety-tips-cartagena/index.html",
+  "blog/top-water-sports-cartagena/index.html"
+]);
 
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8");
   const rel = path.relative(root, file).replaceAll("\\", "/");
+  if (redirectedOrInternal.has(rel)) continue;
   const title = html.match(/<title>([\s\S]*?)<\/title>/i)?.[1].replace(/\s+/g, " ").trim() ?? "";
   const description = html.match(/<meta\s+name=["']description["']\s+content=["']([\s\S]*?)["']/i)?.[1].replace(/\s+/g, " ").trim() ?? "";
   const canonical = html.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)/i)?.[1] ?? "";
@@ -29,7 +46,7 @@ for (const file of htmlFiles) {
   if (!title || title.length > 65) errors.push(`${rel}: title missing or longer than 65 characters (${title.length})`);
   if (!description || description.length > 165) errors.push(`${rel}: description missing or longer than 165 characters (${description.length})`);
   if (h1Count !== 1) errors.push(`${rel}: expected one H1, found ${h1Count}`);
-  if (!canonical.startsWith("https://kitecartagena.com")) errors.push(`${rel}: invalid canonical ${canonical || "missing"}`);
+  if (!canonical.startsWith(expectedOrigin)) errors.push(`${rel}: invalid canonical ${canonical || "missing"}`);
   if (canonicalUrls.has(canonical)) errors.push(`${rel}: duplicate canonical ${canonical}`);
   canonicalUrls.add(canonical);
   if (!/property=["']og:image["']/i.test(html)) errors.push(`${rel}: missing og:image`);

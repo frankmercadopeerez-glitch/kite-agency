@@ -2,7 +2,7 @@
   "name": "kite-cartagena",
   "private": true,
   "scripts": {
-    "build:locales": "node scripts/generate-locales.mjs && node scripts/normalize-contact-and-assets.mjs",
+    "build:locales": "node scripts/generate-site-v2.mjs && node scripts/normalize-contact-and-assets.mjs",
     "build:css": "tailwindcss -i ./src/tailwind.css -o ./assets/styles.css --minify",
     "build": "pnpm run build:locales && pnpm run build:css",
     "audit:site": "node scripts/audit-site.mjs",
