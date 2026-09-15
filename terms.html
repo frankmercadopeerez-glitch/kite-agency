@@ -4,14 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terms & Conditions | Cartagena Kitesurf Center</title>
+    <meta name="theme-color" content="#051b2c" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Booking Terms & Privacy | Kite Cartagena</title>
     <meta
       name="description"
-      content="Terms and conditions for Cartagena Kitesurf Center. Booking policies, liability waivers, and service agreements for kitesurfing lessons and water sports in Cartagena, Colombia."
+      content="Read Kite Cartagena booking, cancellation, weather, safety, liability and privacy terms before reserving a kitesurf or water sports experience."
     />
     <meta name="robots" content="noindex, follow" />
-    <link rel="canonical" href="https://kitesurfencartagena.com/terms.html" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="canonical" href="https://kitecartagena.com/terms.html" />
+    <meta property="og:title" content="Booking Terms & Privacy | Kite Cartagena" />
+    <meta property="og:description" content="Read Kite Cartagena booking, cancellation, weather, safety, liability and privacy terms before reserving a kitesurf or water sports experience." />
+    <meta property="og:image" content="https://kitecartagena.com/images/salto.webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kitecartagena.com/terms.html" />
+    <meta property="og:site_name" content="Kite Cartagena" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Booking Terms & Privacy | Kite Cartagena" />
+    <meta name="twitter:description" content="Read Kite Cartagena booking, cancellation, weather, safety, liability and privacy terms before reserving a kitesurf or water sports experience." />
+    <meta name="twitter:image" content="https://kitecartagena.com/images/salto.webp" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
@@ -20,19 +33,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ["Montserrat", "sans-serif"],
-              serif: ["Playfair Display", "serif"],
-            },
-            colors: { brand: { navy: "#051b2c", gold: "#c5a059" } },
-          },
-        },
-      };
-    </script>
     <style>
       .glass-nav {
         background: rgba(5, 27, 44, 0.95);
@@ -41,8 +41,9 @@
     </style>
   </head>
   <body class="bg-white text-gray-800 flex flex-col min-h-screen">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Nav (Master - No Active State) -->
-    <nav
+    <nav aria-label="Main navigation"
       class="fixed w-full z-50 glass-nav text-white transition-all duration-300"
       id="navbar"
     >
@@ -52,7 +53,7 @@
           <a href="index.html" class="flex flex-col group">
             <span
               class="font-serif text-sm tracking-wide font-bold text-white group-hover:text-brand-gold transition"
-              >CARTAGENA KITESURF CENTER</span
+              >KITE CARTAGENA</span
             >
             <span class="text-[9px] uppercase tracking-[0.4em] text-gray-400"
               >Naval Standard</span
@@ -85,10 +86,7 @@
           </div>
 
           <!-- Mobile Menu Button -->
-          <button
-            class="md:hidden text-xl text-brand-gold"
-            onclick="toggleMobileMenu()"
-          >
+          <button type="button" class="md:hidden text-xl text-brand-gold" onclick="toggleMobileMenu(this)" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
             <i class="fas fa-bars"></i>
           </button>
         </div>
@@ -134,7 +132,7 @@
           </p>
           <p class="text-gray-600 text-sm leading-relaxed mb-4">
             Due to the high demand for our premium instructors and equipment
-            reservation, Marine Tech enforces a strict cancellation policy
+            reservation, Kite Cartagena enforces a strict cancellation policy
             standard in the nautical tourism industry.
           </p>
           <ul class="list-disc ml-5 text-sm text-gray-600 space-y-2">
@@ -166,17 +164,17 @@
       <section id="privacy" class="mb-10">
         <h2 class="text-xl font-bold mb-4 text-brand-navy">Privacy Policy</h2>
         <p class="text-gray-600 text-sm leading-relaxed mb-4">
-          Marine Tech respects your privacy. We collect personal information
+          Kite Cartagena respects your privacy. We collect personal information
           solely for the purpose of securing your booking and ensuring safety
           protocols (e.g., medical conditions relevant to diving or
           kitesurfing). We do not sell your data to third parties.
         </p>
       </section>
 
-      <section class="mb-10">
+      <section id="main-content" class="mb-10">
         <h2 class="text-xl font-bold mb-4 text-brand-navy">Liability Waiver</h2>
         <p class="text-gray-600 text-sm leading-relaxed">
-          By booking any service with Marine Tech (Kitesurf, SUP, Foil,
+          By booking any service with Kite Cartagena (Kitesurf, SUP, Foil,
           Downwind), the client acknowledges the inherent risks of extreme water
           sports. While we adhere to strict naval safety standards, clients
           participate at their own risk and must follow all instructor
@@ -195,22 +193,22 @@
         <div class="col-span-2 md:col-span-2">
           <span
             class="font-serif text-2xl tracking-widest font-bold text-brand-gold"
-            >MARINE TECH</span
+            >KITE CARTAGENA</span
           >
           <p
             class="text-gray-400 mt-4 max-w-sm leading-relaxed font-light text-xs md:text-sm"
           >
-            The leading authority in water sports tourism in Cartagena. Founded
+            Local kitesurf lessons and water sports experiences in Cartagena. Founded
             on the principles of discipline, safety, and excellence.
           </p>
           <div class="mt-6 flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-white transition"
+            <a role="link" aria-disabled="true" tabindex="-1" class="text-gray-400 hover:text-white transition"
               ><i class="fab fa-instagram text-xl"></i
             ></a>
-            <a href="#" class="text-gray-400 hover:text-white transition"
+            <a role="link" aria-disabled="true" tabindex="-1" class="text-gray-400 hover:text-white transition"
               ><i class="fab fa-facebook text-xl"></i
             ></a>
-            <a href="#" class="text-gray-400 hover:text-white transition"
+            <a role="link" aria-disabled="true" tabindex="-1" class="text-gray-400 hover:text-white transition"
               ><i class="fab fa-tripadvisor text-xl"></i
             ></a>
           </div>
@@ -276,14 +274,16 @@
       <div
         class="border-t border-white/10 mt-8 pt-6 text-center text-gray-500 text-[10px] uppercase tracking-widest"
       >
-        &copy; 2024 Marine Tech Cartagena. All Rights Reserved.
+        &copy; 2026 Kite Cartagena. All Rights Reserved.
       </div>
     </footer>
 
     <script>
-      function toggleMobileMenu() {
-        const menu = document.getElementById("mobile-menu");
-        menu.classList.toggle("hidden");
+      function toggleMobileMenu(button) {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+        const isOpen = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!isOpen));
+        button.setAttribute("aria-label", isOpen ? "Open navigation menu" : "Close navigation menu");
       }
     </script>
   </body>

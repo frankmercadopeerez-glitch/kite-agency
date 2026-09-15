@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  :focus-visible {
+    outline: 3px solid #c5a059;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .skip-link {
+    @apply fixed left-4 top-4 z-[100] -translate-y-24 rounded bg-white px-4 py-3 font-bold text-brand-navy shadow-lg transition-transform focus:translate-y-0;
+  }
+}

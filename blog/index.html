@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kitesurf Cartagena Blog | Expert Guides, Tips & Travel</title>
+    <meta name="theme-color" content="#051b2c" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <title>Kitesurf Cartagena Guides | Wind, Safety & Travel</title>
     <meta
       name="description"
-      content="Expert kitesurfing guides for Cartagena, Colombia. Wind seasons, spot guides, beginner tips, safety advice, and packing lists written by Naval-certified instructors."
-    />
-    <meta
-      name="keywords"
-      content="kitesurf cartagena blog, kitesurfing guides cartagena, kitesurf tips colombia, water sports cartagena articles"
+      content="Plan a kitesurf trip to Cartagena with practical guides to wind seasons, La Boquilla, beginner lessons, safety, equipment and water sports."
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://kitesurfencartagena.com/blog/" />
+    <link rel="canonical" href="https://kitecartagena.com/blog/" />
     <meta
       property="og:title"
       content="Kitesurf Cartagena Blog | Expert Guides & Tips"
@@ -25,11 +25,11 @@
     />
     <meta
       property="og:image"
-      content="https://kitesurfencartagena.com/images/salto.webp"
+      content="https://kitecartagena.com/images/salto.webp"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://kitesurfencartagena.com/blog/" />
-    <meta property="og:site_name" content="Cartagena Kitesurf Center" />
+    <meta property="og:url" content="https://kitecartagena.com/blog/" />
+    <meta property="og:site_name" content="Kite Cartagena" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Kitesurf Cartagena Blog" />
     <meta
@@ -38,9 +38,8 @@
     />
     <meta
       name="twitter:image"
-      content="https://kitesurfencartagena.com/images/salto.webp"
+      content="https://kitecartagena.com/images/salto.webp"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
@@ -49,19 +48,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ["Montserrat", "sans-serif"],
-              serif: ["Playfair Display", "serif"],
-            },
-            colors: { brand: { navy: "#051b2c", gold: "#c5a059" } },
-          },
-        },
-      };
-    </script>
     <style>
       .glass-nav {
         background: rgba(5, 27, 44, 0.95);
@@ -70,8 +56,9 @@
     </style>
   </head>
   <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Nav (Master - Active: Journal) -->
-    <nav
+    <nav aria-label="Main navigation"
       class="fixed w-full z-50 glass-nav text-white transition-all duration-300"
       id="navbar"
     >
@@ -81,7 +68,7 @@
           <a href="../index.html" class="flex flex-col group">
             <span
               class="font-serif text-sm tracking-wide font-bold text-white group-hover:text-brand-gold transition"
-              >CARTAGENA KITESURF CENTER</span
+              >KITE CARTAGENA</span
             >
             <span class="text-[9px] uppercase tracking-[0.4em] text-gray-400"
               >Naval Standard</span
@@ -115,10 +102,7 @@
           </div>
 
           <!-- Mobile Menu Button -->
-          <button
-            class="md:hidden text-xl text-brand-gold"
-            onclick="toggleMobileMenu()"
-          >
+          <button type="button" class="md:hidden text-xl text-brand-gold" onclick="toggleMobileMenu(this)" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
             <i class="fas fa-bars"></i>
           </button>
         </div>
@@ -143,7 +127,7 @@
             >Terms & Policy</a
           >
           <a
-            href="https://wa.me/573044301112?text=Hi!%20I%20found%20the%20Cartagena%20Kitesurf%20Center%20Journal%20and%20I%27m%20interested%20in%20your%20water%20sports%20experiences.%20Can%20you%20help%20me%20plan%20my%20visit%3F"
+            href="https://wa.me/573044301112?text=Hi!%20I%20found%20the%20Kite%20Cartagena%20Journal%20and%20I%27m%20interested%20in%20your%20water%20sports%20experiences.%20Can%20you%20help%20me%20plan%20my%20visit%3F"
             class="bg-brand-gold text-brand-navy py-4 font-bold mt-4 rounded-sm w-full"
             >CONTACT CONCIERGE</a
           >
@@ -156,7 +140,7 @@
       <div class="max-w-7xl mx-auto px-6 text-center">
         <span
           class="text-brand-gold font-bold uppercase tracking-[0.2em] text-xs block mb-4"
-          >Marine Tech Journal</span
+          >Kite Cartagena Journal</span
         >
         <h1 class="font-serif text-5xl text-brand-navy mb-4">Winds & Waves</h1>
         <p class="text-gray-500 font-light max-w-2xl mx-auto">
@@ -166,7 +150,7 @@
       </div>
     </header>
 
-    <main
+    <main id="main-content"
       class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 lg:grid-cols-3 gap-10"
     >
       <!-- Article 1 (Updated Image) -->
@@ -502,22 +486,22 @@
         <div class="col-span-2 md:col-span-2">
           <span
             class="font-serif text-2xl tracking-widest font-bold text-brand-gold"
-            >MARINE TECH</span
+            >KITE CARTAGENA</span
           >
           <p
             class="text-gray-400 mt-4 max-w-sm leading-relaxed font-light text-xs md:text-sm"
           >
-            The leading authority in water sports tourism in Cartagena. Founded
+            Local kitesurf lessons and water sports experiences in Cartagena. Founded
             on the principles of discipline, safety, and excellence.
           </p>
           <div class="mt-6 flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-white transition"
+            <a role="link" aria-disabled="true" tabindex="-1" class="text-gray-400 hover:text-white transition"
               ><i class="fab fa-instagram text-xl"></i
             ></a>
-            <a href="#" class="text-gray-400 hover:text-white transition"
+            <a role="link" aria-disabled="true" tabindex="-1" class="text-gray-400 hover:text-white transition"
               ><i class="fab fa-facebook text-xl"></i
             ></a>
-            <a href="#" class="text-gray-400 hover:text-white transition"
+            <a role="link" aria-disabled="true" tabindex="-1" class="text-gray-400 hover:text-white transition"
               ><i class="fab fa-tripadvisor text-xl"></i
             ></a>
           </div>
@@ -587,14 +571,16 @@
       <div
         class="border-t border-white/10 mt-8 pt-6 text-center text-gray-500 text-[10px] uppercase tracking-widest"
       >
-        &copy; 2024 Marine Tech Cartagena. All Rights Reserved.
+        &copy; 2026 Kite Cartagena. All Rights Reserved.
       </div>
     </footer>
 
     <script>
-      function toggleMobileMenu() {
-        const menu = document.getElementById("mobile-menu");
-        menu.classList.toggle("hidden");
+      function toggleMobileMenu(button) {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+        const isOpen = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!isOpen));
+        button.setAttribute("aria-label", isOpen ? "Open navigation menu" : "Close navigation menu");
       }
     </script>
   </body>

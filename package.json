@@ -1,0 +1,14 @@
+{
+  "name": "kite-cartagena",
+  "private": true,
+  "scripts": {
+    "build:locales": "node scripts/generate-locales.mjs",
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./assets/styles.css --minify",
+    "build": "pnpm run build:locales && pnpm run build:css",
+    "audit:site": "node scripts/audit-site.mjs",
+    "audit:browser": "node scripts/browser-qa.mjs"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
