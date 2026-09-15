@@ -10,7 +10,13 @@ The site is technically prepared, but the following business claims should be co
 - Brands in use (Duotone and Cabrinha), equipment condition, and the statement that inventory is renewed annually.
 - Boat support, radio helmets, private transportation, photography, meals, Barú/Rosario downwind routes, group minimums, and all other package inclusions.
 - Permission and source evidence for the three named customer testimonials on the home page.
-- Instagram and other social profile URLs. Placeholder social links are disabled until real profiles are supplied.
-- Registration requirements for a Colombian tourism operator, including the applicable RNT number if the service requires one.
+- Facebook and Instagram ownership/linking status in Meta Business Suite; Instagram is now `@kitecartagena`, but the asset connection is still returning a Meta error.
+- Confirm whether the inherited claims about former Colombian Navy experience and IKO certification can be supported before keeping them public.
+
+## Confirmed from the Dunas & Olas project on 2026-09-14
+
+- Customer WhatsApp: `+57 316 303 0589` (`573163030589` in links).
+- Dunas & Olas publishes RNT No. `292710`.
+- Kite Cartagena must describe itself as an experience marketed by Dunas & Olas under that RNT; it must not imply that the separate brand owns the registration.
 
 Do not add ratings, review counts, awards, “best”, “safest”, or “#1” claims without a verifiable source.
