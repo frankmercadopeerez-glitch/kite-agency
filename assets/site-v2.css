@@ -17,6 +17,11 @@
  .hero,.hero.compact{padding:1.65rem 1.05rem}
  .hero h1,.hero.compact h1{font-size:clamp(2.2rem,11vw,3.35rem)}
  .lead{font-size:.98rem;margin-top:1rem}.actions{margin-top:1.25rem}.actions .btn{min-height:46px}
- .floating-wa{left:auto;right:.75rem;bottom:.75rem;width:auto;font-size:.88rem}
+ .floating-wa{left:auto;right:.75rem;bottom:.75rem;width:54px;height:54px;font-size:0}
  .check-list{grid-template-columns:1fr}
 }
+
+/* Global WhatsApp action: recognizable icon, compact enough not to cover content. */
+.floating-wa{width:62px;height:62px;padding:0;border:0;background:#20c865 url('/images/whatsapp-logo.png') center/contain no-repeat;font-size:0;overflow:hidden;box-shadow:0 10px 32px rgba(0,0,0,.28);transition:transform .2s ease,box-shadow .2s ease}
+.floating-wa:hover,.floating-wa:focus-visible{transform:translateY(-3px) scale(1.03);box-shadow:0 14px 38px rgba(0,0,0,.34);outline:3px solid #fff;outline-offset:3px}
+@media(max-width:620px){.floating-wa{left:auto;right:.75rem;bottom:.75rem;width:54px;height:54px}}
