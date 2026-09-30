@@ -4,16 +4,2552 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
-    { "source": "/about.html", "destination": "/metodologia-editorial/", "permanent": true },
-    { "source": "/experiences.html", "destination": "/cursos-kitesurf/", "permanent": true },
-    { "source": "/blog/best-time-kitesurf-cartagena/", "destination": "/blog/best-time/", "permanent": true },
-    { "source": "/blog/first-kitesurf-jump-guide/", "destination": "/blog/first-lesson/", "permanent": true },
-    { "source": "/blog/how-long-to-learn-kitesurfing/", "destination": "/blog/how-long/", "permanent": true },
-    { "source": "/blog/kite-wing-foil-differences/", "destination": "/blog/kite-vs-wing/", "permanent": true },
-    { "source": "/blog/kitesurf-la-boquilla-spot-guide/", "destination": "/blog/la-boquilla-guide/", "permanent": true },
-    { "source": "/blog/kitesurf-packing-list/", "destination": "/blog/packing-list/", "permanent": true },
-    { "source": "/blog/kitesurfing-for-beginners-cartagena/", "destination": "/blog/first-lesson/", "permanent": true },
-    { "source": "/blog/safety-tips-cartagena/", "destination": "/blog/safety-checklist/", "permanent": true },
-    { "source": "/blog/top-water-sports-cartagena/", "destination": "/blog/kite-vs-wing/", "permanent": true }
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "kite-agency.vercel.app"
+        }
+      ],
+      "destination": "https://kitecartagena.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.kitecartagena.com"
+        }
+      ],
+      "destination": "https://kitecartagena.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/metodologia-editorial/",
+      "permanent": true
+    },
+    {
+      "source": "/experiences.html",
+      "destination": "/cursos-kitesurf/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-time-kitesurf-cartagena/",
+      "destination": "/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/first-kitesurf-jump-guide/",
+      "destination": "/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-long-to-learn-kitesurfing/",
+      "destination": "/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kite-wing-foil-differences/",
+      "destination": "/blog/kite-vs-wing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kitesurf-la-boquilla-spot-guide/",
+      "destination": "/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kitesurf-packing-list/",
+      "destination": "/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kitesurfing-for-beginners-cartagena/",
+      "destination": "/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/safety-tips-cartagena/",
+      "destination": "/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-water-sports-cartagena/",
+      "destination": "/blog/kite-vs-wing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/airport-la-boquilla/",
+      "destination": "/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/usa-trip/",
+      "destination": "/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/europe-trip/",
+      "destination": "/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/couples/",
+      "destination": "/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/three-day-itinerary/",
+      "destination": "/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/five-day-itinerary/",
+      "destination": "/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/seven-day-itinerary/",
+      "destination": "/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/where-to-stay/",
+      "destination": "/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/travel-insurance/",
+      "destination": "/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/december-kitesurf/",
+      "destination": "/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/january-kitesurf/",
+      "destination": "/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/february-kitesurf/",
+      "destination": "/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/march-kitesurf/",
+      "destination": "/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/april-kitesurf/",
+      "destination": "/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/may-november-kitesurf/",
+      "destination": "/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rainy-season/",
+      "destination": "/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/beginners-fear/",
+      "destination": "/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/swimming-required/",
+      "destination": "/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fitness-required/",
+      "destination": "/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/minimum-age/",
+      "destination": "/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-to-wear/",
+      "destination": "/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/water-start/",
+      "destination": "/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ride-upwind/",
+      "destination": "/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/beach-etiquette/",
+      "destination": "/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/self-rescue/",
+      "destination": "/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sun-hydration/",
+      "destination": "/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/la-boquilla-beginners/",
+      "destination": "/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/manzanillo-kitesurf/",
+      "destination": "/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/las-velas-kitesurf/",
+      "destination": "/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cartagena-vs-salinas/",
+      "destination": "/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/airline-baggage/",
+      "destination": "/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/travel-repair-kit/",
+      "destination": "/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/booking-details-cartagena/",
+      "destination": "/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/payments-cancellations-kitesurf/",
+      "destination": "/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/book-kitesurf-advance/",
+      "destination": "/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/private-vs-group/",
+      "destination": "/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/course-vs-rental/",
+      "destination": "/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rent-or-bring-gear/",
+      "destination": "/blog/rental-requirements/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wind-speed-beginners/",
+      "destination": "/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/trade-winds-cartagena/",
+      "destination": "/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/morning-vs-afternoon/",
+      "destination": "/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/no-wind-plan/",
+      "destination": "/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bladder-valve-repair/",
+      "destination": "/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/canopy-tear-repair/",
+      "destination": "/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/lines-bar-repair/",
+      "destination": "/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kite-line-wear/",
+      "destination": "/blog/saltwater-gear-care/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/airport-la-boquilla/",
+      "destination": "/en/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/usa-trip/",
+      "destination": "/en/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/europe-trip/",
+      "destination": "/en/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/couples/",
+      "destination": "/en/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/three-day-itinerary/",
+      "destination": "/en/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/five-day-itinerary/",
+      "destination": "/en/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/seven-day-itinerary/",
+      "destination": "/en/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/where-to-stay/",
+      "destination": "/en/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/travel-insurance/",
+      "destination": "/en/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/december-kitesurf/",
+      "destination": "/en/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/january-kitesurf/",
+      "destination": "/en/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/february-kitesurf/",
+      "destination": "/en/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/march-kitesurf/",
+      "destination": "/en/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/april-kitesurf/",
+      "destination": "/en/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/may-november-kitesurf/",
+      "destination": "/en/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/rainy-season/",
+      "destination": "/en/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/beginners-fear/",
+      "destination": "/en/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/swimming-required/",
+      "destination": "/en/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/fitness-required/",
+      "destination": "/en/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/minimum-age/",
+      "destination": "/en/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/what-to-wear/",
+      "destination": "/en/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/water-start/",
+      "destination": "/en/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/ride-upwind/",
+      "destination": "/en/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/beach-etiquette/",
+      "destination": "/en/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/self-rescue/",
+      "destination": "/en/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/sun-hydration/",
+      "destination": "/en/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/la-boquilla-beginners/",
+      "destination": "/en/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/manzanillo-kitesurf/",
+      "destination": "/en/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/las-velas-kitesurf/",
+      "destination": "/en/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/cartagena-vs-salinas/",
+      "destination": "/en/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/airline-baggage/",
+      "destination": "/en/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/travel-repair-kit/",
+      "destination": "/en/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/booking-details-cartagena/",
+      "destination": "/en/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/payments-cancellations-kitesurf/",
+      "destination": "/en/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/book-kitesurf-advance/",
+      "destination": "/en/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/private-vs-group/",
+      "destination": "/en/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/course-vs-rental/",
+      "destination": "/en/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/rent-or-bring-gear/",
+      "destination": "/en/blog/rental-requirements/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/wind-speed-beginners/",
+      "destination": "/en/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/trade-winds-cartagena/",
+      "destination": "/en/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/morning-vs-afternoon/",
+      "destination": "/en/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/no-wind-plan/",
+      "destination": "/en/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/bladder-valve-repair/",
+      "destination": "/en/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/canopy-tear-repair/",
+      "destination": "/en/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/lines-bar-repair/",
+      "destination": "/en/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/kite-line-wear/",
+      "destination": "/en/blog/saltwater-gear-care/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/airport-la-boquilla/",
+      "destination": "/fr/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/usa-trip/",
+      "destination": "/fr/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/europe-trip/",
+      "destination": "/fr/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/couples/",
+      "destination": "/fr/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/three-day-itinerary/",
+      "destination": "/fr/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/five-day-itinerary/",
+      "destination": "/fr/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/seven-day-itinerary/",
+      "destination": "/fr/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/where-to-stay/",
+      "destination": "/fr/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/travel-insurance/",
+      "destination": "/fr/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/december-kitesurf/",
+      "destination": "/fr/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/january-kitesurf/",
+      "destination": "/fr/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/february-kitesurf/",
+      "destination": "/fr/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/march-kitesurf/",
+      "destination": "/fr/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/april-kitesurf/",
+      "destination": "/fr/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/may-november-kitesurf/",
+      "destination": "/fr/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/rainy-season/",
+      "destination": "/fr/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/beginners-fear/",
+      "destination": "/fr/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/swimming-required/",
+      "destination": "/fr/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/fitness-required/",
+      "destination": "/fr/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/minimum-age/",
+      "destination": "/fr/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/what-to-wear/",
+      "destination": "/fr/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/water-start/",
+      "destination": "/fr/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/ride-upwind/",
+      "destination": "/fr/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/beach-etiquette/",
+      "destination": "/fr/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/self-rescue/",
+      "destination": "/fr/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/sun-hydration/",
+      "destination": "/fr/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/la-boquilla-beginners/",
+      "destination": "/fr/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/manzanillo-kitesurf/",
+      "destination": "/fr/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/las-velas-kitesurf/",
+      "destination": "/fr/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/cartagena-vs-salinas/",
+      "destination": "/fr/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/airline-baggage/",
+      "destination": "/fr/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/travel-repair-kit/",
+      "destination": "/fr/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/booking-details-cartagena/",
+      "destination": "/fr/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/payments-cancellations-kitesurf/",
+      "destination": "/fr/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/book-kitesurf-advance/",
+      "destination": "/fr/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/private-vs-group/",
+      "destination": "/fr/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/course-vs-rental/",
+      "destination": "/fr/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/rent-or-bring-gear/",
+      "destination": "/fr/blog/rental-requirements/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/wind-speed-beginners/",
+      "destination": "/fr/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/trade-winds-cartagena/",
+      "destination": "/fr/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/morning-vs-afternoon/",
+      "destination": "/fr/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/no-wind-plan/",
+      "destination": "/fr/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/bladder-valve-repair/",
+      "destination": "/fr/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/canopy-tear-repair/",
+      "destination": "/fr/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/lines-bar-repair/",
+      "destination": "/fr/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/blog/kite-line-wear/",
+      "destination": "/fr/blog/saltwater-gear-care/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/airport-la-boquilla/",
+      "destination": "/de/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/usa-trip/",
+      "destination": "/de/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/europe-trip/",
+      "destination": "/de/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/couples/",
+      "destination": "/de/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/three-day-itinerary/",
+      "destination": "/de/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/five-day-itinerary/",
+      "destination": "/de/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/seven-day-itinerary/",
+      "destination": "/de/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/where-to-stay/",
+      "destination": "/de/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/travel-insurance/",
+      "destination": "/de/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/december-kitesurf/",
+      "destination": "/de/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/january-kitesurf/",
+      "destination": "/de/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/february-kitesurf/",
+      "destination": "/de/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/march-kitesurf/",
+      "destination": "/de/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/april-kitesurf/",
+      "destination": "/de/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/may-november-kitesurf/",
+      "destination": "/de/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/rainy-season/",
+      "destination": "/de/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/beginners-fear/",
+      "destination": "/de/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/swimming-required/",
+      "destination": "/de/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/fitness-required/",
+      "destination": "/de/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/minimum-age/",
+      "destination": "/de/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/what-to-wear/",
+      "destination": "/de/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/water-start/",
+      "destination": "/de/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/ride-upwind/",
+      "destination": "/de/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/beach-etiquette/",
+      "destination": "/de/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/self-rescue/",
+      "destination": "/de/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/sun-hydration/",
+      "destination": "/de/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/la-boquilla-beginners/",
+      "destination": "/de/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/manzanillo-kitesurf/",
+      "destination": "/de/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/las-velas-kitesurf/",
+      "destination": "/de/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/cartagena-vs-salinas/",
+      "destination": "/de/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/airline-baggage/",
+      "destination": "/de/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/travel-repair-kit/",
+      "destination": "/de/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/booking-details-cartagena/",
+      "destination": "/de/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/payments-cancellations-kitesurf/",
+      "destination": "/de/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/book-kitesurf-advance/",
+      "destination": "/de/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/private-vs-group/",
+      "destination": "/de/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/course-vs-rental/",
+      "destination": "/de/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/rent-or-bring-gear/",
+      "destination": "/de/blog/rental-requirements/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/wind-speed-beginners/",
+      "destination": "/de/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/trade-winds-cartagena/",
+      "destination": "/de/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/morning-vs-afternoon/",
+      "destination": "/de/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/no-wind-plan/",
+      "destination": "/de/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/bladder-valve-repair/",
+      "destination": "/de/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/canopy-tear-repair/",
+      "destination": "/de/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/lines-bar-repair/",
+      "destination": "/de/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blog/kite-line-wear/",
+      "destination": "/de/blog/saltwater-gear-care/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/airport-la-boquilla/",
+      "destination": "/pt/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/usa-trip/",
+      "destination": "/pt/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/europe-trip/",
+      "destination": "/pt/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/couples/",
+      "destination": "/pt/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/three-day-itinerary/",
+      "destination": "/pt/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/five-day-itinerary/",
+      "destination": "/pt/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/seven-day-itinerary/",
+      "destination": "/pt/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/where-to-stay/",
+      "destination": "/pt/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/travel-insurance/",
+      "destination": "/pt/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/december-kitesurf/",
+      "destination": "/pt/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/january-kitesurf/",
+      "destination": "/pt/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/february-kitesurf/",
+      "destination": "/pt/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/march-kitesurf/",
+      "destination": "/pt/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/april-kitesurf/",
+      "destination": "/pt/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/may-november-kitesurf/",
+      "destination": "/pt/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/rainy-season/",
+      "destination": "/pt/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/beginners-fear/",
+      "destination": "/pt/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/swimming-required/",
+      "destination": "/pt/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/fitness-required/",
+      "destination": "/pt/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/minimum-age/",
+      "destination": "/pt/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/what-to-wear/",
+      "destination": "/pt/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/water-start/",
+      "destination": "/pt/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/ride-upwind/",
+      "destination": "/pt/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/beach-etiquette/",
+      "destination": "/pt/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/self-rescue/",
+      "destination": "/pt/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/sun-hydration/",
+      "destination": "/pt/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/la-boquilla-beginners/",
+      "destination": "/pt/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/manzanillo-kitesurf/",
+      "destination": "/pt/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/las-velas-kitesurf/",
+      "destination": "/pt/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/cartagena-vs-salinas/",
+      "destination": "/pt/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/airline-baggage/",
+      "destination": "/pt/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/travel-repair-kit/",
+      "destination": "/pt/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/booking-details-cartagena/",
+      "destination": "/pt/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/payments-cancellations-kitesurf/",
+      "destination": "/pt/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/book-kitesurf-advance/",
+      "destination": "/pt/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/private-vs-group/",
+      "destination": "/pt/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/course-vs-rental/",
+      "destination": "/pt/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/rent-or-bring-gear/",
+      "destination": "/pt/blog/rental-requirements/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/wind-speed-beginners/",
+      "destination": "/pt/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/trade-winds-cartagena/",
+      "destination": "/pt/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/morning-vs-afternoon/",
+      "destination": "/pt/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/no-wind-plan/",
+      "destination": "/pt/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/bladder-valve-repair/",
+      "destination": "/pt/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/canopy-tear-repair/",
+      "destination": "/pt/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/lines-bar-repair/",
+      "destination": "/pt/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/blog/kite-line-wear/",
+      "destination": "/pt/blog/saltwater-gear-care/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/airport-la-boquilla/",
+      "destination": "/it/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/usa-trip/",
+      "destination": "/it/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/europe-trip/",
+      "destination": "/it/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/couples/",
+      "destination": "/it/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/three-day-itinerary/",
+      "destination": "/it/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/five-day-itinerary/",
+      "destination": "/it/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/seven-day-itinerary/",
+      "destination": "/it/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/where-to-stay/",
+      "destination": "/it/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/travel-insurance/",
+      "destination": "/it/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/december-kitesurf/",
+      "destination": "/it/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/january-kitesurf/",
+      "destination": "/it/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/february-kitesurf/",
+      "destination": "/it/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/march-kitesurf/",
+      "destination": "/it/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/april-kitesurf/",
+      "destination": "/it/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/may-november-kitesurf/",
+      "destination": "/it/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/rainy-season/",
+      "destination": "/it/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/beginners-fear/",
+      "destination": "/it/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/swimming-required/",
+      "destination": "/it/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/fitness-required/",
+      "destination": "/it/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/minimum-age/",
+      "destination": "/it/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/what-to-wear/",
+      "destination": "/it/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/water-start/",
+      "destination": "/it/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/ride-upwind/",
+      "destination": "/it/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/beach-etiquette/",
+      "destination": "/it/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/self-rescue/",
+      "destination": "/it/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/sun-hydration/",
+      "destination": "/it/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/la-boquilla-beginners/",
+      "destination": "/it/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/manzanillo-kitesurf/",
+      "destination": "/it/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/las-velas-kitesurf/",
+      "destination": "/it/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/cartagena-vs-salinas/",
+      "destination": "/it/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/airline-baggage/",
+      "destination": "/it/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/travel-repair-kit/",
+      "destination": "/it/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/booking-details-cartagena/",
+      "destination": "/it/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/payments-cancellations-kitesurf/",
+      "destination": "/it/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/book-kitesurf-advance/",
+      "destination": "/it/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/private-vs-group/",
+      "destination": "/it/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/course-vs-rental/",
+      "destination": "/it/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/rent-or-bring-gear/",
+      "destination": "/it/blog/rental-requirements/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/wind-speed-beginners/",
+      "destination": "/it/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/trade-winds-cartagena/",
+      "destination": "/it/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/morning-vs-afternoon/",
+      "destination": "/it/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/no-wind-plan/",
+      "destination": "/it/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/bladder-valve-repair/",
+      "destination": "/it/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/canopy-tear-repair/",
+      "destination": "/it/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/lines-bar-repair/",
+      "destination": "/it/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/it/blog/kite-line-wear/",
+      "destination": "/it/blog/saltwater-gear-care/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/airport-la-boquilla/",
+      "destination": "/ru/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/usa-trip/",
+      "destination": "/ru/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/europe-trip/",
+      "destination": "/ru/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/couples/",
+      "destination": "/ru/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/three-day-itinerary/",
+      "destination": "/ru/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/five-day-itinerary/",
+      "destination": "/ru/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/seven-day-itinerary/",
+      "destination": "/ru/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/where-to-stay/",
+      "destination": "/ru/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/travel-insurance/",
+      "destination": "/ru/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/december-kitesurf/",
+      "destination": "/ru/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/january-kitesurf/",
+      "destination": "/ru/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/february-kitesurf/",
+      "destination": "/ru/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/march-kitesurf/",
+      "destination": "/ru/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/april-kitesurf/",
+      "destination": "/ru/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/may-november-kitesurf/",
+      "destination": "/ru/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/rainy-season/",
+      "destination": "/ru/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/beginners-fear/",
+      "destination": "/ru/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/swimming-required/",
+      "destination": "/ru/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/fitness-required/",
+      "destination": "/ru/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/minimum-age/",
+      "destination": "/ru/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/what-to-wear/",
+      "destination": "/ru/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/water-start/",
+      "destination": "/ru/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/ride-upwind/",
+      "destination": "/ru/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/beach-etiquette/",
+      "destination": "/ru/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/self-rescue/",
+      "destination": "/ru/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/sun-hydration/",
+      "destination": "/ru/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/la-boquilla-beginners/",
+      "destination": "/ru/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/manzanillo-kitesurf/",
+      "destination": "/ru/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/las-velas-kitesurf/",
+      "destination": "/ru/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/cartagena-vs-salinas/",
+      "destination": "/ru/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/airline-baggage/",
+      "destination": "/ru/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/travel-repair-kit/",
+      "destination": "/ru/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/booking-details-cartagena/",
+      "destination": "/ru/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/payments-cancellations-kitesurf/",
+      "destination": "/ru/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/book-kitesurf-advance/",
+      "destination": "/ru/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/private-vs-group/",
+      "destination": "/ru/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/course-vs-rental/",
+      "destination": "/ru/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/rent-or-bring-gear/",
+      "destination": "/ru/blog/rental-requirements/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/wind-speed-beginners/",
+      "destination": "/ru/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/trade-winds-cartagena/",
+      "destination": "/ru/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/morning-vs-afternoon/",
+      "destination": "/ru/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/no-wind-plan/",
+      "destination": "/ru/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/bladder-valve-repair/",
+      "destination": "/ru/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/canopy-tear-repair/",
+      "destination": "/ru/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/lines-bar-repair/",
+      "destination": "/ru/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/blog/kite-line-wear/",
+      "destination": "/ru/blog/saltwater-gear-care/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/airport-la-boquilla/",
+      "destination": "/zh/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/usa-trip/",
+      "destination": "/zh/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/europe-trip/",
+      "destination": "/zh/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/couples/",
+      "destination": "/zh/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/three-day-itinerary/",
+      "destination": "/zh/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/five-day-itinerary/",
+      "destination": "/zh/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/seven-day-itinerary/",
+      "destination": "/zh/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/where-to-stay/",
+      "destination": "/zh/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/travel-insurance/",
+      "destination": "/zh/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/december-kitesurf/",
+      "destination": "/zh/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/january-kitesurf/",
+      "destination": "/zh/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/february-kitesurf/",
+      "destination": "/zh/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/march-kitesurf/",
+      "destination": "/zh/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/april-kitesurf/",
+      "destination": "/zh/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/may-november-kitesurf/",
+      "destination": "/zh/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/rainy-season/",
+      "destination": "/zh/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/beginners-fear/",
+      "destination": "/zh/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/swimming-required/",
+      "destination": "/zh/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/fitness-required/",
+      "destination": "/zh/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/minimum-age/",
+      "destination": "/zh/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/what-to-wear/",
+      "destination": "/zh/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/water-start/",
+      "destination": "/zh/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/ride-upwind/",
+      "destination": "/zh/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/beach-etiquette/",
+      "destination": "/zh/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/self-rescue/",
+      "destination": "/zh/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/sun-hydration/",
+      "destination": "/zh/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/la-boquilla-beginners/",
+      "destination": "/zh/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/manzanillo-kitesurf/",
+      "destination": "/zh/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/las-velas-kitesurf/",
+      "destination": "/zh/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/cartagena-vs-salinas/",
+      "destination": "/zh/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/airline-baggage/",
+      "destination": "/zh/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/travel-repair-kit/",
+      "destination": "/zh/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/booking-details-cartagena/",
+      "destination": "/zh/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/payments-cancellations-kitesurf/",
+      "destination": "/zh/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/book-kitesurf-advance/",
+      "destination": "/zh/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/private-vs-group/",
+      "destination": "/zh/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/course-vs-rental/",
+      "destination": "/zh/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/rent-or-bring-gear/",
+      "destination": "/zh/blog/rental-requirements/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/wind-speed-beginners/",
+      "destination": "/zh/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/trade-winds-cartagena/",
+      "destination": "/zh/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/morning-vs-afternoon/",
+      "destination": "/zh/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/no-wind-plan/",
+      "destination": "/zh/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/bladder-valve-repair/",
+      "destination": "/zh/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/canopy-tear-repair/",
+      "destination": "/zh/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/lines-bar-repair/",
+      "destination": "/zh/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/blog/kite-line-wear/",
+      "destination": "/zh/blog/saltwater-gear-care/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/airport-la-boquilla/",
+      "destination": "/ko/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/usa-trip/",
+      "destination": "/ko/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/europe-trip/",
+      "destination": "/ko/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/couples/",
+      "destination": "/ko/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/three-day-itinerary/",
+      "destination": "/ko/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/five-day-itinerary/",
+      "destination": "/ko/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/seven-day-itinerary/",
+      "destination": "/ko/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/where-to-stay/",
+      "destination": "/ko/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/travel-insurance/",
+      "destination": "/ko/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/december-kitesurf/",
+      "destination": "/ko/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/january-kitesurf/",
+      "destination": "/ko/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/february-kitesurf/",
+      "destination": "/ko/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/march-kitesurf/",
+      "destination": "/ko/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/april-kitesurf/",
+      "destination": "/ko/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/may-november-kitesurf/",
+      "destination": "/ko/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/rainy-season/",
+      "destination": "/ko/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/beginners-fear/",
+      "destination": "/ko/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/swimming-required/",
+      "destination": "/ko/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/fitness-required/",
+      "destination": "/ko/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/minimum-age/",
+      "destination": "/ko/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/what-to-wear/",
+      "destination": "/ko/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/water-start/",
+      "destination": "/ko/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/ride-upwind/",
+      "destination": "/ko/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/beach-etiquette/",
+      "destination": "/ko/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/self-rescue/",
+      "destination": "/ko/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/sun-hydration/",
+      "destination": "/ko/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/la-boquilla-beginners/",
+      "destination": "/ko/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/manzanillo-kitesurf/",
+      "destination": "/ko/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/las-velas-kitesurf/",
+      "destination": "/ko/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/cartagena-vs-salinas/",
+      "destination": "/ko/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/airline-baggage/",
+      "destination": "/ko/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/travel-repair-kit/",
+      "destination": "/ko/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/booking-details-cartagena/",
+      "destination": "/ko/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/payments-cancellations-kitesurf/",
+      "destination": "/ko/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/book-kitesurf-advance/",
+      "destination": "/ko/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/private-vs-group/",
+      "destination": "/ko/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/course-vs-rental/",
+      "destination": "/ko/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/rent-or-bring-gear/",
+      "destination": "/ko/blog/rental-requirements/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/wind-speed-beginners/",
+      "destination": "/ko/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/trade-winds-cartagena/",
+      "destination": "/ko/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/morning-vs-afternoon/",
+      "destination": "/ko/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/no-wind-plan/",
+      "destination": "/ko/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/bladder-valve-repair/",
+      "destination": "/ko/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/canopy-tear-repair/",
+      "destination": "/ko/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/lines-bar-repair/",
+      "destination": "/ko/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/blog/kite-line-wear/",
+      "destination": "/ko/blog/saltwater-gear-care/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/airport-la-boquilla/",
+      "destination": "/ja/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/usa-trip/",
+      "destination": "/ja/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/europe-trip/",
+      "destination": "/ja/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/couples/",
+      "destination": "/ja/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/three-day-itinerary/",
+      "destination": "/ja/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/five-day-itinerary/",
+      "destination": "/ja/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/seven-day-itinerary/",
+      "destination": "/ja/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/where-to-stay/",
+      "destination": "/ja/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/travel-insurance/",
+      "destination": "/ja/blog/complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/december-kitesurf/",
+      "destination": "/ja/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/january-kitesurf/",
+      "destination": "/ja/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/february-kitesurf/",
+      "destination": "/ja/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/march-kitesurf/",
+      "destination": "/ja/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/april-kitesurf/",
+      "destination": "/ja/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/may-november-kitesurf/",
+      "destination": "/ja/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/rainy-season/",
+      "destination": "/ja/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/beginners-fear/",
+      "destination": "/ja/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/swimming-required/",
+      "destination": "/ja/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/fitness-required/",
+      "destination": "/ja/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/minimum-age/",
+      "destination": "/ja/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/what-to-wear/",
+      "destination": "/ja/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/water-start/",
+      "destination": "/ja/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/ride-upwind/",
+      "destination": "/ja/blog/how-long/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/beach-etiquette/",
+      "destination": "/ja/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/self-rescue/",
+      "destination": "/ja/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/sun-hydration/",
+      "destination": "/ja/blog/safety-checklist/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/la-boquilla-beginners/",
+      "destination": "/ja/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/manzanillo-kitesurf/",
+      "destination": "/ja/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/las-velas-kitesurf/",
+      "destination": "/ja/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/cartagena-vs-salinas/",
+      "destination": "/ja/blog/la-boquilla-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/airline-baggage/",
+      "destination": "/ja/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/travel-repair-kit/",
+      "destination": "/ja/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/booking-details-cartagena/",
+      "destination": "/ja/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/payments-cancellations-kitesurf/",
+      "destination": "/ja/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/book-kitesurf-advance/",
+      "destination": "/ja/blog/book-whatsapp/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/private-vs-group/",
+      "destination": "/ja/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/course-vs-rental/",
+      "destination": "/ja/blog/choose-course/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/rent-or-bring-gear/",
+      "destination": "/ja/blog/rental-requirements/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/wind-speed-beginners/",
+      "destination": "/ja/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/trade-winds-cartagena/",
+      "destination": "/ja/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/morning-vs-afternoon/",
+      "destination": "/ja/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/no-wind-plan/",
+      "destination": "/ja/blog/wind-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/bladder-valve-repair/",
+      "destination": "/ja/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/canopy-tear-repair/",
+      "destination": "/ja/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/lines-bar-repair/",
+      "destination": "/ja/blog/kite-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/blog/kite-line-wear/",
+      "destination": "/ja/blog/saltwater-gear-care/",
+      "permanent": true
+    },
+    {
+      "source": "/viento-cartagena/",
+      "destination": "/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/primera-clase-kitesurf/",
+      "destination": "/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/viajar-con-equipo-kite/",
+      "destination": "/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/en/cartagena-wind-guide/",
+      "destination": "/en/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/en/first-kitesurf-lesson/",
+      "destination": "/en/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/en/travel-with-kite-gear/",
+      "destination": "/en/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/vent-cartagena/",
+      "destination": "/fr/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/premier-cours-kitesurf/",
+      "destination": "/fr/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/voyager-avec-materiel-kite/",
+      "destination": "/fr/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/de/wind-cartagena/",
+      "destination": "/de/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/de/erste-kitesurf-stunde/",
+      "destination": "/de/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/de/reise-mit-kitegepaeck/",
+      "destination": "/de/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/vento-cartagena/",
+      "destination": "/pt/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/primeira-aula-kitesurf/",
+      "destination": "/pt/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/viajar-com-equipamento-kite/",
+      "destination": "/pt/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/it/vento-cartagena/",
+      "destination": "/it/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/it/prima-lezione-kitesurf/",
+      "destination": "/it/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/it/viaggiare-con-attrezzatura-kite/",
+      "destination": "/it/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/veter-cartagena/",
+      "destination": "/ru/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/pervyj-urok-kiteserfinga/",
+      "destination": "/ru/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ru/poezdka-s-kite-snaryazheniem/",
+      "destination": "/ru/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/cartagena-wind/",
+      "destination": "/zh/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/first-kitesurf-lesson/",
+      "destination": "/zh/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/travel-with-kite-gear/",
+      "destination": "/zh/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/cartagena-wind/",
+      "destination": "/ko/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/first-kitesurf-lesson/",
+      "destination": "/ko/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ko/travel-with-kite-gear/",
+      "destination": "/ko/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/cartagena-wind/",
+      "destination": "/ja/blog/best-time/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/first-kitesurf-lesson/",
+      "destination": "/ja/blog/first-lesson/",
+      "permanent": true
+    },
+    {
+      "source": "/ja/travel-with-kite-gear/",
+      "destination": "/ja/blog/packing-list/",
+      "permanent": true
+    },
+    {
+      "source": "/about/",
+      "destination": "/metodologia-editorial/",
+      "permanent": true
+    },
+    {
+      "source": "/experiences/",
+      "destination": "/cursos-kitesurf/",
+      "permanent": true
+    },
+    {
+      "source": "/terms/",
+      "destination": "/terminos-y-condiciones/",
+      "permanent": true
+    },
+    {
+      "source": "/terms.html",
+      "destination": "/terminos-y-condiciones/",
+      "permanent": true
+    }
   ]
 }

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kite-agency.vercel.app/sitemap.xml
+Sitemap: https://kitecartagena.com/sitemap.xml

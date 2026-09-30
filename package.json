@@ -6,6 +6,9 @@
     "build:css": "tailwindcss -i ./src/tailwind.css -o ./assets/styles.css --minify",
     "build": "pnpm run build:locales && pnpm run build:css",
     "audit:site": "node scripts/audit-site.mjs",
+    "audit:editorial": "node scripts/audit-editorial.mjs",
+    "audit:browser:editorial": "node scripts/browser-editorial-qa.mjs",
+    "preview": "node scripts/preview-site.mjs",
     "audit:browser": "node scripts/browser-qa.mjs"
   },
   "devDependencies": {

@@ -67,7 +67,9 @@ for (const test of cases) {
   if (test.article) {
     if ((await page.locator(".inline-source").count()) < 2) failures.push(`${test.name}: article has fewer than two contextual source links`);
     if (!(await page.locator("a[href*='frequently-asked-questions']").first().isVisible())) failures.push(`${test.name}: article lacks a visible FAQ link`);
-    if (!(await page.locator("form.wa-form").isVisible())) failures.push(`${test.name}: article lacks a WhatsApp form`);
+    if (!(await page.locator(".article-contents").isVisible())) failures.push(`${test.name}: article lacks a table of contents`);
+    if ((await page.locator(".editorial-section").count()) < 4) failures.push(`${test.name}: article lacks substantive sections`);
+    if ((await page.locator(".guide-depth,.interactive-checklist").count()) > 0) failures.push(`${test.name}: repeated generic blocks returned`);
   }
   if (test.form && !(await page.locator("form.wa-form").isVisible())) failures.push(`${test.name}: WhatsApp form is not visible`);
   if (test.course) {
@@ -85,22 +87,29 @@ for (const test of cases) {
   if (test.reviews) {
     const primaryCards = page.locator('.reviews-group:not([aria-hidden="true"]) [data-review-card]');
     const duplicateGroup = page.locator('.reviews-group[aria-hidden="true"]');
-    if ((await primaryCards.count()) !== 4) failures.push(`${test.name}: review carousel does not contain four sourced reviews`);
-    if ((await duplicateGroup.locator('[data-review-card]').count()) !== 4) failures.push(`${test.name}: review carousel duplicate is incomplete`);
+    if ((await primaryCards.count()) !== 4) failures.push(`${test.name}: review section does not contain four sourced reviews`);
+    if ((await duplicateGroup.locator('[data-review-card]').count()) !== 4) failures.push(`${test.name}: review fallback duplicate is incomplete`);
     if ((await page.locator('.review-person span').first().textContent())?.trim().length === 0) failures.push(`${test.name}: review country label is missing`);
     if (!(await page.locator('.reviews-source[href*="tripadvisor"]').isVisible())) failures.push(`${test.name}: review source link is missing`);
     const track = page.locator('.reviews-track');
-    if (test.reducedMotion) {
-      const reduced = await track.evaluate((el) => getComputedStyle(el).animationName === "none");
-      if (!reduced) failures.push(`${test.name}: reduced-motion mode does not disable the carousel animation`);
-    } else {
-      const animated = await track.evaluate((el) => getComputedStyle(el).animationName.includes("reviews-loop"));
-      if (!animated) failures.push(`${test.name}: review carousel is not animated continuously`);
+    const animated = await track.evaluate((el) => getComputedStyle(el).animationName.includes("reviews-loop"));
+    if (test.reducedMotion && animated) {
+      failures.push(`${test.name}: reduced-motion mode does not disable review animation`);
+    } else if (animated) {
+      await page.locator('.reviews-viewport').hover();
+      const hoverState = await track.evaluate((el) => getComputedStyle(el).animationPlayState);
+      if (hoverState !== 'running') failures.push(`${test.name}: review animation pauses on pointer hover`);
       const toggle = page.locator('.reviews-toggle');
       await toggle.click();
       if ((await toggle.getAttribute('aria-pressed')) !== 'true') failures.push(`${test.name}: review pause control did not update its state`);
       const paused = await track.evaluate((el) => getComputedStyle(el).animationPlayState === "paused");
-      if (!paused) failures.push(`${test.name}: review carousel did not pause`);
+      if (!paused) failures.push(`${test.name}: review animation did not pause`);
+    } else {
+      const visibleCards = await primaryCards.evaluateAll((cards) => cards.filter((card) => {
+        const style = getComputedStyle(card);
+        return style.display !== 'none' && style.visibility !== 'hidden';
+      }).length);
+      if (visibleCards !== 4) failures.push(`${test.name}: static review layout hides sourced reviews`);
     }
   }
   if (test.spots) {

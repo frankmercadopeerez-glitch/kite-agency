@@ -1,0 +1,31 @@
+import {chromium} from 'playwright';
+import fs from 'node:fs';
+import {expandedArticles,guideCopy} from './editorial/index.mjs';
+const base=process.env.SITE_URL||'http://127.0.0.1:4173',failures=[],stats={articles:0,languagePairs:0};
+const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
+const page=await browser.newPage({viewport:{width:1366,height:768}});
+page.on('pageerror',e=>failures.push(e.message));
+for(const [slug] of expandedArticles){
+ await page.goto(base+'/en/blog/'+slug+'/');stats.articles++;
+ if(await page.locator('h1').textContent()!==guideCopy.en[slug].title)failures.push(slug+': heading');
+ const expected=guideCopy.en[slug].sections;
+ const actual=await page.locator('.editorial-section>p:first-of-type').allTextContents();
+ if(JSON.stringify(actual)!==JSON.stringify(expected.map(s=>s[1])))failures.push(slug+': untranslated or missing section');
+ const links=await page.locator('.language-menu a').evaluateAll(els=>els.map(e=>e.getAttribute('href')));
+ if(!links.includes('/blog/'+slug+'/')||!links.includes('/en/blog/'+slug+'/')||links.length!==2)failures.push(slug+': language links');
+ else stats.languagePairs++;
+ if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))failures.push(slug+': overflow');
+}
+await page.goto(base+'/en/blog/lesson-budget/');
+await page.locator('[name="people"]').fill('2');await page.locator('[name="transport"]').fill('60000');await page.locator('[name="extras"]').fill('40000');
+const result=await page.locator('output').textContent();
+if(!result.includes('Estimated total: COP')||!result.includes('1,400,000')||!result.includes('700,000'))failures.push('English budget: '+result);
+await page.setViewportSize({width:390,height:844});await page.locator('.editorial-tool').scrollIntoViewIfNeeded();await page.screenshot({path:'.qa/budget-english-mobile.png'});
+await page.locator('.language summary').click();await page.locator('.language-menu a[href="/blog/lesson-budget/"]').click();
+if(new URL(page.url()).pathname!=='/blog/lesson-budget/')failures.push('English to Spanish switch');
+await page.goto(base+'/en/blog/');await page.locator('#blog-search').fill('gift');
+if(await page.locator('#article-library .blog-card:visible').count()!==1)failures.push('English search');
+await page.goto(base+'/en/blog/choose-course/');
+if(!await page.getByRole('heading',{name:'Explore your next question'}).isVisible())failures.push('English hub directory');
+if((await page.locator('.topic-directory').textContent()).includes('Aprender'))failures.push('Spanish hub text');
+await browser.close();const report={base,...stats,result,failures};fs.writeFileSync('.qa/english-expansion.json',JSON.stringify(report,null,2));console.log(report);process.exitCode=failures.length?1:0;

@@ -1,0 +1,6 @@
+.qa/
+research/
+.git/
+node_modules/
+*.md
+**/__pycache__/

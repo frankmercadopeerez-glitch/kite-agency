@@ -1,0 +1,860 @@
+{
+  "date": "2026-09-15",
+  "articles": [
+    {
+      "slug": "complete-guide",
+      "title": "Viaje de kitesurf a Cartagena: itinerario y alojamiento",
+      "intent": "Organiza un viaje de kite de 3, 5 o 7 días: alojamiento, traslados, presupuesto, acompañantes y margen para el viento.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "best-time",
+      "title": "Mejor época para kitesurf en Cartagena: guía por meses",
+      "intent": "Compara la temporada seca y lluviosa para elegir fechas de kite en Cartagena, con margen de viaje y sin confundir clima con pronóstico.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "first-lesson",
+      "title": "Primera clase de kitesurf: preparación y qué esperar",
+      "intent": "Qué practicarás en tu primera clase, cómo prepararte, qué ropa llevar y cómo hablar de natación, miedo, edad y necesidades personales.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "how-long",
+      "title": "Cuánto se tarda en aprender kitesurf: etapas reales",
+      "intent": "Distingue horas de curso, primeros water starts y autonomía. Aprende a evaluar tu progreso y preparar la siguiente sesión.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "safety-checklist",
+      "title": "Seguridad en kitesurf: revisión antes de entrar al agua",
+      "intent": "Organiza la revisión de entorno, equipo, comunicación y retorno; entiende qué practicar con un instructor antes de navegar de forma independiente.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "la-boquilla-guide",
+      "title": "La Boquilla y otros spots de Cartagena: cómo elegir",
+      "intent": "Compara la logística de La Boquilla, Manzanillo, Las Velas y Salinas del Rey sin asumir que todas las playas sirven para el mismo nivel.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "packing-list",
+      "title": "Equipaje de kitesurf: qué llevar y cómo preparar el vuelo",
+      "intent": "Prepara ropa, material y bolsa deportiva; revisa peso, medidas, conexiones y documentación de tu equipo antes de volar.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "kite-size",
+      "title": "Tamaño de kite: qué revisar antes de elegir una cometa",
+      "intent": "Entiende cómo intervienen peso, viento, tabla, modelo y nivel al elegir tamaño de kite, y por qué una tabla universal no basta.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "book-whatsapp",
+      "title": "Reservar kitesurf: datos, pago y cambios por clima",
+      "intent": "Envía una solicitud útil, confirma el total y distingue consulta, reserva y sesión confirmada antes de pagar por una experiencia de kite.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "choose-course",
+      "title": "Qué curso de kitesurf elegir según tus habilidades",
+      "intent": "Compara introducción, progresión, refuerzo y clases compartidas según lo que sabes hacer, tu tiempo real de práctica y tu objetivo.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "rental-requirements",
+      "title": "Alquilar equipo de kitesurf: autonomía y condiciones",
+      "intent": "Qué revisar para alquilar material, cómo acreditar tu nivel y cuándo conviene llevar tu propio equipo a Cartagena.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "wind-sources",
+      "title": "Cómo leer el pronóstico de viento para una sesión de kite",
+      "intent": "Revisa hora, unidades, rachas, dirección y avisos; decide qué preguntar a la escuela y qué hacer cuando el viento no permite la sesión.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "kite-vs-wing",
+      "title": "Kitesurf o wing foil: equipo, aprendizaje y diferencias",
+      "intent": "Compara cometa con líneas y wing de mano: espacio, tabla, habilidades iniciales y preguntas para escoger una primera experiencia.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "kite-repair",
+      "title": "Cometa dañada: diagnóstico, reparación o sustitución",
+      "intent": "Distingue pérdidas de aire, desgarros y daños en líneas; prepara un diagnóstico y conoce qué comprobar antes de volver a usar la cometa.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "saltwater-gear-care",
+      "title": "Cuidado del equipo de kite: secado, almacenaje y desgaste",
+      "intent": "Organiza el cuidado después de navegar: arena, secado, barra, líneas y almacenamiento según el manual de cada componente.",
+      "parent": null,
+      "availableLanguages": [
+        "es",
+        "en",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "ru",
+        "zh",
+        "ko",
+        "ja"
+      ]
+    },
+    {
+      "slug": "lesson-budget",
+      "title": "Cuánto presupuestar para aprender kitesurf en Cartagena",
+      "intent": "Calcula el coste de enseñanza, desplazamientos y práctica sin confundir el precio del paquete con una promesa de nivel.",
+      "parent": "choose-course",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "included-equipment",
+      "title": "Qué equipo incluye una clase y qué debes llevar tú",
+      "intent": "Distingue material técnico, elementos personales y servicios adicionales antes de comparar una clase de kitesurf.",
+      "parent": "choose-course",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "school-evaluation",
+      "title": "Cómo comparar escuelas de kitesurf antes de reservar",
+      "intent": "Evalúa programa, proporción de alumnos, condiciones comerciales y evidencia local con una ficha de comparación.",
+      "parent": "choose-course",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "instructor-credentials",
+      "title": "Certificación de instructor: qué comprobar y qué significa",
+      "intent": "Distingue acreditación de una escuela, credencial personal y nivel del alumno al leer información de kitesurf.",
+      "parent": "choose-course",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "private-practice-time",
+      "title": "Hora reservada y tiempo de práctica: cómo compararlos",
+      "intent": "Entiende briefing, turnos, pausas y cierre para comparar la duración real de dos propuestas de enseñanza.",
+      "parent": "choose-course",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "couples-different-levels",
+      "title": "Aprender kite en pareja cuando tienen niveles distintos",
+      "intent": "Organiza objetivos, turnos y expectativas para disfrutar una estancia conjunta sin imponer el mismo ejercicio a ambos.",
+      "parent": "choose-course",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "solo-kite-travel",
+      "title": "Viajar solo para hacer kitesurf: organización y apoyo",
+      "intent": "Prepara contacto local, equipaje y horarios cuando viajas sin acompañante, diferenciando viaje individual y práctica sin asistencia.",
+      "parent": "complete-guide",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "children-family-planning",
+      "title": "Kitesurf con hijos: preguntas para organizar la participación",
+      "intent": "Prepara la consulta de un menor, la presencia del responsable y el plan de acompañantes sin asumir admisión por edad.",
+      "parent": "first-lesson",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "adults-first-sport",
+      "title": "Empezar kitesurf de adulto sin experiencia en deportes de tabla",
+      "intent": "Prepara una introducción basada en habilidades actuales y ritmo de aprendizaje, sin compararte con riders experimentados.",
+      "parent": "first-lesson",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "returning-after-break",
+      "title": "Volver al kitesurf después de meses o años sin practicar",
+      "intent": "Organiza una sesión de retorno que revise habilidades, equipo y objetivos antes de contratar navegación independiente.",
+      "parent": "how-long",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "switching-kite-schools",
+      "title": "Cómo continuar un curso en otra escuela de kitesurf",
+      "intent": "Prepara un historial breve para retomar la formación sin repetir por inercia ni saltar habilidades pendientes.",
+      "parent": "how-long",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "lesson-language-signals",
+      "title": "Idioma de la clase y señales: qué acordar antes de empezar",
+      "intent": "Evita malentendidos al reservar instrucción en otro idioma y distingue conversación turística de comunicación durante ejercicios.",
+      "parent": "first-lesson",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "gift-kitesurf-lesson",
+      "title": "Regalar una clase de kitesurf: cómo elegir sin equivocarte",
+      "intent": "Valora interés, fechas, nivel y condiciones de uso antes de comprar una experiencia para otra persona.",
+      "parent": "book-whatsapp",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "group-kite-session",
+      "title": "Organizar kitesurf para un grupo: cupos, turnos y objetivos",
+      "intent": "Distribuye participantes, enseñanza y acompañantes antes de solicitar una actividad de amigos o empresa.",
+      "parent": "choose-course",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "short-stay-cruise",
+      "title": "Kitesurf en una visita corta o escala de crucero",
+      "intent": "Evalúa si una actividad condicionada por el viento cabe en tu ventana de llegada y regreso.",
+      "parent": "complete-guide",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "kite-glossary",
+      "title": "Vocabulario de kitesurf para entender tu primera clase",
+      "intent": "Barra, líneas, arnés, borde de ventana y ceñida: entiende los términos que escucharás durante la enseñanza.",
+      "parent": "first-lesson",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "wind-window-explained",
+      "title": "Qué es la ventana de viento en kitesurf",
+      "intent": "Una explicación conceptual de la ventana de vuelo y de por qué cambia la tracción de la cometa.",
+      "parent": "first-lesson",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "body-drag-purpose",
+      "title": "Para qué sirve el body drag antes de subir a la tabla",
+      "intent": "Comprende qué aprende un alumno al desplazarse sin tabla y cómo registrar el progreso de esta fase.",
+      "parent": "how-long",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "water-relaunch-learning",
+      "title": "Relanzamiento de la cometa: qué debes aprender en clase",
+      "intent": "Distingue conocer una maniobra de poder resolver una caída del kite en diferentes condiciones.",
+      "parent": "how-long",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "controlled-stop",
+      "title": "Por qué aprender a detenerte importa tanto como navegar",
+      "intent": "Qué significa incluir una parada controlada dentro de los objetivos de una clase de kitesurf.",
+      "parent": "how-long",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "transitions-learning",
+      "title": "Cuándo empezar a trabajar transiciones en kitesurf",
+      "intent": "Cómo plantear una sesión de cambio de dirección según tu control actual y el objetivo de progresión.",
+      "parent": "how-long",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "first-jump-readiness",
+      "title": "Antes del primer salto: cómo plantear una clase de progresión",
+      "intent": "Preguntas para evaluar preparación, entorno y enseñanza antes de incorporar saltos al kitesurf.",
+      "parent": "safety-checklist",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "video-coaching",
+      "title": "Cómo aprovechar el análisis de vídeo en una clase de kitesurf",
+      "intent": "Elige tomas útiles, una pregunta concreta y criterios de privacidad para revisar tu técnica.",
+      "parent": "how-long",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "progress-log",
+      "title": "Qué anotar después de cada clase de kitesurf",
+      "intent": "Un registro sencillo para continuar tu aprendizaje sin depender de recordar solo las horas realizadas.",
+      "parent": "how-long",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "regular-goofy",
+      "title": "Regular o goofy: qué cambia al aprender kitesurf",
+      "intent": "Comprende la preferencia de pie sin confundirla con la capacidad de navegar en los dos sentidos.",
+      "parent": "first-lesson",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "surfing-skating-transfer",
+      "title": "Si ya haces surf o skate, qué cambia al aprender kitesurf",
+      "intent": "Identifica habilidades transferibles y tareas nuevas para elegir una introducción adecuada a tu experiencia.",
+      "parent": "first-lesson",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "lesson-plateau",
+      "title": "Qué hacer si sientes que no avanzas en kitesurf",
+      "intent": "Convierte una dificultad repetida en una pregunta observable para aprovechar mejor una clase de refuerzo.",
+      "parent": "how-long",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "fatigue-session-duration",
+      "title": "Cómo repartir clases y descansos durante tu viaje de kite",
+      "intent": "Organiza ventanas de aprendizaje sin confundir más horas seguidas con más práctica aprovechable.",
+      "parent": "complete-guide",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "beach-assistance-scope",
+      "title": "Asistencia en playa: qué servicio estás contratando",
+      "intent": "Diferencia ayuda puntual con el equipo, supervisión y enseñanza antes de organizar una sesión.",
+      "parent": "rental-requirements",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "supervision-vs-instruction",
+      "title": "Supervisión o clase de refuerzo: cómo elegir",
+      "intent": "Decide si necesitas observación durante la práctica o enseñanza activa sobre una habilidad pendiente.",
+      "parent": "rental-requirements",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "first-kite-purchase",
+      "title": "Primer equipo de kitesurf: qué decidir antes de comprar",
+      "intent": "Ordena nivel, lugar de uso, compatibilidad y mantenimiento antes de elegir tu primer conjunto.",
+      "parent": "kite-size",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "used-kite-inspection",
+      "title": "Comprar un kite usado: documentación e inspección previa",
+      "intent": "Qué revisar con un especialista y qué pedir al vendedor antes de decidir por un equipo de segunda mano.",
+      "parent": "kite-repair",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "twin-tip-directional-foil",
+      "title": "Twin-tip, tabla direccional y foil: diferencias para elegir clase",
+      "intent": "Comprende qué cambia entre tres tipos de tabla y por qué requieren objetivos de aprendizaje distintos.",
+      "parent": "kite-vs-wing",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "inflatable-vs-foil-kite",
+      "title": "Cometa inflable y cometa foil: qué diferencia sus estructuras",
+      "intent": "Aclara la diferencia entre una cometa tipo foil y una tabla con hydrofoil antes de consultar material.",
+      "parent": "kite-size",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "harness-fit",
+      "title": "Cómo comunicar si un arnés de kitesurf no te ajusta bien",
+      "intent": "Distingue talla, colocación y molestias para pedir una revisión antes de continuar la clase.",
+      "parent": "first-lesson",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "bar-compatibility",
+      "title": "¿Sirve cualquier barra para cualquier cometa?",
+      "intent": "Qué información de modelo, año, líneas y sistema debes reunir para verificar compatibilidad.",
+      "parent": "kite-repair",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "helmet-vest-choice",
+      "title": "Casco y chaleco en kitesurf: qué preguntar sobre protección",
+      "intent": "Entiende por qué ajuste, finalidad y especificación del equipo importan más que su aspecto.",
+      "parent": "safety-checklist",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "radio-lesson",
+      "title": "Clases de kitesurf con radio: utilidad y límites",
+      "intent": "Qué acordar sobre comunicación, señales y funcionamiento cuando una escuela ofrece enseñanza por radio.",
+      "parent": "first-lesson",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "pump-pressure",
+      "title": "Presión de inflado del kite: dónde encontrar el dato correcto",
+      "intent": "Evita usar una cifra universal y aprende a identificar la especificación de tu cometa y su bomba.",
+      "parent": "saltwater-gear-care",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "fins-footstraps",
+      "title": "Quillas y footstraps: qué revisar antes de usar una tabla",
+      "intent": "Prepara una consulta sobre fijaciones y ajuste sin improvisar cambios en el material alquilado.",
+      "parent": "rental-requirements",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "equipment-record",
+      "title": "Ficha de tu equipo: modelos, números de serie y reparaciones",
+      "intent": "Organiza la información que facilita repuestos, servicio técnico y seguimiento del material de kitesurf.",
+      "parent": "saltwater-gear-care",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "spare-parts-identification",
+      "title": "Cómo pedir el repuesto correcto para una cometa",
+      "intent": "Prepara fotos y referencias para consultar válvulas, conectores o piezas sin comprar por parecido.",
+      "parent": "kite-repair",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "wet-gear-flight",
+      "title": "Equipo mojado antes del vuelo: cómo organizar el último día",
+      "intent": "Planifica secado, embalaje y peso del equipaje deportivo sin improvisar al salir hacia el aeropuerto.",
+      "parent": "packing-list",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "sand-beach-storage",
+      "title": "Dónde dejar el equipo entre sesiones en la playa",
+      "intent": "Preguntas sobre sombra, espacio, custodia y conservación para una pausa entre actividades.",
+      "parent": "saltwater-gear-care",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "lost-board-plan",
+      "title": "Si pierdes de vista la tabla: qué acordar antes de navegar",
+      "intent": "Prepara identificación, comunicación y límites de asistencia sin improvisar una recuperación arriesgada.",
+      "parent": "safety-checklist",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "airport-transfer-kitebag",
+      "title": "Traslado desde el aeropuerto con bolsa de kitesurf",
+      "intent": "Qué comunicar al reservar un vehículo para transportar personas y equipo deportivo en Cartagena.",
+      "parent": "complete-guide",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "no-car-kite-trip",
+      "title": "Viaje de kitesurf a Cartagena sin alquilar carro",
+      "intent": "Organiza traslados por sesión y compara alojamiento según la logística real de tus días de playa.",
+      "parent": "complete-guide",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "remote-work-sessions",
+      "title": "Teletrabajo y kitesurf: cómo organizar una semana en Cartagena",
+      "intent": "Reserva ventanas flexibles sin comprometer reuniones ni depender de un horario de viento garantizado.",
+      "parent": "complete-guide",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "companion-beach-day",
+      "title": "Qué hacer si acompañas a alguien a su clase de kitesurf",
+      "intent": "Organiza espera, encuentro y tiempos compartidos sin invadir el área de práctica.",
+      "parent": "complete-guide",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "shower-changing-storage",
+      "title": "Baños, duchas y guardarropa: qué confirmar antes de ir a clase",
+      "intent": "Una ficha de servicios prácticos para organizar ropa, pertenencias y el plan después de la playa.",
+      "parent": "packing-list",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "accessible-lesson-planning",
+      "title": "Necesidades de accesibilidad: cómo consultar una actividad de playa",
+      "intent": "Describe apoyos, desplazamientos y comunicación para recibir una respuesta concreta sobre la viabilidad de tu visita.",
+      "parent": "first-lesson",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "meeting-point-confirmation",
+      "title": "Cómo confirmar el punto de encuentro de tu clase",
+      "intent": "Evita confundir una zona de playa con la ubicación exacta de la sesión y coordina tu llegada.",
+      "parent": "book-whatsapp",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "weather-change-trip-plan",
+      "title": "Si se aplaza tu sesión: cómo reorganizar el día de viaje",
+      "intent": "Separa la decisión meteorológica, las condiciones de reserva y tus otros compromisos para mantener opciones.",
+      "parent": "wind-sources",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "booking-receipt",
+      "title": "Qué debe quedar en la confirmación de tu reserva",
+      "intent": "Reúne servicio, participantes, moneda, horario y condiciones en un comprobante fácil de consultar.",
+      "parent": "book-whatsapp",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "share-trip-costs",
+      "title": "Viaje de kite entre amigos: cómo repartir los gastos",
+      "intent": "Separa enseñanza, equipo y gastos comunes para comparar un plan grupal sin confundir tarifas individuales.",
+      "parent": "choose-course",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "downwind-first-trip",
+      "title": "Primer downwind: qué experiencia debes comunicar",
+      "intent": "Evalúa una travesía con el operador sin confundir saber navegar con estar preparado para cualquier recorrido.",
+      "parent": "rental-requirements",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "downwind-return-logistics",
+      "title": "Logística de downwind: salida, llegada y transporte del equipo",
+      "intent": "Qué coordinar cuando una travesía de kite termina en un lugar distinto del punto de inicio.",
+      "parent": "complete-guide",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "kitefoil-prerequisites",
+      "title": "Kitefoil: qué contar antes de reservar tu primera clase",
+      "intent": "Organiza una evaluación de transición desde kite con tabla convencional hacia una sesión de foil.",
+      "parent": "kite-vs-wing",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "foil-depth-planning",
+      "title": "Profundidad y espacio en foil: qué debe evaluar la sesión",
+      "intent": "Comprende por qué la elección del área depende del conjunto y del ejercicio, no solo de que haya viento.",
+      "parent": "kite-vs-wing",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "wing-first-session",
+      "title": "Tu primera sesión de wing: qué la diferencia de una clase de kite",
+      "intent": "Conoce el objetivo inicial y las preguntas sobre tabla y foil antes de reservar wingfoil.",
+      "parent": "kite-vs-wing",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "sup-first-outing",
+      "title": "Primera salida de SUP: qué preguntar y cómo prepararte",
+      "intent": "Diferencia alquiler de tabla y salida guiada para elegir una primera experiencia de paddle surf.",
+      "parent": "kite-vs-wing",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "sup-route-wind",
+      "title": "Viento y recorrido en SUP: preguntas antes de salir",
+      "intent": "Por qué el trayecto de regreso debe formar parte de la planificación de una salida de paddle surf.",
+      "parent": "wind-sources",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "sunset-sup-planning",
+      "title": "SUP al atardecer: horario, luz y regreso",
+      "intent": "Organiza una salida al final del día sin convertir la puesta de sol en una garantía de condiciones.",
+      "parent": "complete-guide",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "sup-vs-kite",
+      "title": "SUP o kitesurf para una primera experiencia en Cartagena",
+      "intent": "Compara objetivo, enseñanza y condiciones para elegir una actividad, especialmente si viajas acompañado.",
+      "parent": "kite-vs-wing",
+      "availableLanguages": [
+        "es"
+      ]
+    },
+    {
+      "slug": "sports-photography-session",
+      "title": "Fotografía de kitesurf: qué acordar antes de contratar una sesión",
+      "intent": "Define objetivo, entrega y permisos sin interferir con la enseñanza ni prometer condiciones visuales exactas.",
+      "parent": "book-whatsapp",
+      "availableLanguages": [
+        "es"
+      ]
+    }
+  ]
+}

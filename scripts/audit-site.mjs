@@ -17,7 +17,7 @@ walk(root);
 const errors = [];
 const warnings = [];
 const canonicalUrls = new Set();
-const expectedOrigin = "https://kite-agency.vercel.app";
+const expectedOrigin = "https://kitecartagena.com";
 const redirectedOrInternal = new Set([
   "about.html",
   "experiences.html",
@@ -33,6 +33,9 @@ const redirectedOrInternal = new Set([
   "blog/safety-tips-cartagena/index.html",
   "blog/top-water-sports-cartagena/index.html"
 ]);
+for (const route of JSON.parse(fs.readFileSync(path.join(root, 'vercel.json'), 'utf8')).redirects || []) {
+  redirectedOrInternal.add(route.source.slice(1).replace(/\/$/, '/index.html'));
+}
 
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8");
