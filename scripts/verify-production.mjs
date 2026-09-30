@@ -28,7 +28,8 @@ await pool(redirects,async rule=>{
 for(const file of ['icons/favicon-48.png','favicon.ico','icons/apple-touch-icon.png','assets/budget.js','assets/editorial.css','sitemap.xml','robots.txt']){
  const r=await fetch(base+'/'+file),remote=Buffer.from(await r.arrayBuffer()),source=fs.readFileSync(file);report.assets++;
  const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
- if(!r.ok||hash(remote)!==hash(source))errors.push(file+': production asset mismatch');
+ const comparable=/\.(?:css|js|xml|txt)$/i.test(file)?x=>Buffer.from(x.toString('utf8').replace(/\r\n/g,'\n')):x=>x;
+ if(!r.ok||hash(comparable(remote))!==hash(comparable(source)))errors.push(file+': production asset mismatch');
 }
 report.spanishArticles=Object.keys(guideCopy.es).length;
 report.englishArticles=Object.keys(guideCopy.en).length;
