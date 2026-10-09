@@ -761,8 +761,8 @@ export default [
   ],
   [
     "inflatable-vs-foil-kite",
-    "kite gonflables versus foils : comprendre les structures",
-    "Clarifiez la différence entre un foil kite et une planche d'hydrofoil avant de parler d'équipement.",
+    "Kite foil ou aile gonflable : différences clés",
+    "Kite foil ou aile gonflable : comparez structure, maniement, entretien et critères utiles avant de choisir du matériel ou un cours.",
     [
       [
         "Deux utilisations du mot foil",

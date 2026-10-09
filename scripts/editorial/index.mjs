@@ -79,16 +79,16 @@ export const guideRelations={
  'saltwater-gear-care':['kite-repair','packing-list','rental-requirements']
 };
 export const editorialUi={
- es:['En esta guía','Guías relacionadas','Leer la guía','Equipo editorial Kite Cartagena · Revisión: 27/09/2026','Referencia oficial','Consulta el servicio','Preguntas generales'],
- en:['In this guide','Related guides','Read the guide','Kite Cartagena editorial team · Reviewed: 2026-09-27','Official reference','Explore the service','General questions'],
- fr:['Dans ce guide','Guides associés','Lire le guide','Équipe éditoriale Kite Cartagena · Révision : 27/09/2026','Référence officielle','Consulter le service','Questions générales'],
- de:['In diesem Guide','Weitere Guides','Guide lesen','Redaktion Kite Cartagena · Stand: 27.09.2026','Offizielle Referenz','Angebot ansehen','Allgemeine Fragen'],
- pt:['Neste guia','Guias relacionados','Ler o guia','Equipe editorial Kite Cartagena · Revisão: 27/09/2026','Referência oficial','Consultar o serviço','Perguntas gerais'],
- it:['In questa guida','Guide correlate','Leggi la guida','Redazione Kite Cartagena · Revisione: 27/09/2026','Riferimento ufficiale','Consulta il servizio','Domande generali'],
- ru:['В этом материале','Связанные материалы','Читать','Редакция Kite Cartagena · Проверено: 27.09.2026','Официальный источник','Посмотреть услугу','Общие вопросы'],
- zh:['本篇目录','相关指南','阅读指南','Kite Cartagena 编辑团队 · 修订：2026-09-27','官方参考','查看服务','常见问题'],
- ko:['이 가이드의 내용','관련 가이드','가이드 읽기','Kite Cartagena 편집팀 · 검토: 2026-09-27','공식 참고 자료','서비스 보기','일반 질문'],
- ja:['このガイドの内容','関連ガイド','ガイドを読む','Kite Cartagena 編集チーム · 確認: 2026-09-27','公式参考資料','サービスを見る','一般的な質問']
+ es:['En esta guía','Guías relacionadas','Leer la guía','Equipo editorial Kite Cartagena · Revisión: 09/10/2026','Referencia oficial','Consulta el servicio','Preguntas generales'],
+ en:['In this guide','Related guides','Read the guide','Kite Cartagena editorial team · Reviewed: 2026-10-09','Official reference','Explore the service','General questions'],
+ fr:['Dans ce guide','Guides associés','Lire le guide','Équipe éditoriale Kite Cartagena · Révision : 09/10/2026','Référence officielle','Consulter le service','Questions générales'],
+ de:['In diesem Guide','Weitere Guides','Guide lesen','Redaktion Kite Cartagena · Stand: 09.10.2026','Offizielle Referenz','Angebot ansehen','Allgemeine Fragen'],
+ pt:['Neste guia','Guias relacionados','Ler o guia','Equipe editorial Kite Cartagena · Revisão: 09/10/2026','Referência oficial','Consultar o serviço','Perguntas gerais'],
+ it:['In questa guida','Guide correlate','Leggi la guida','Redazione Kite Cartagena · Revisione: 09/10/2026','Riferimento ufficiale','Consulta il servizio','Domande generali'],
+ ru:['В этом материале','Связанные материалы','Читать','Редакция Kite Cartagena · Проверено: 09.10.2026','Официальный источник','Посмотреть услугу','Общие вопросы'],
+ zh:['本篇目录','相关指南','阅读指南','Kite Cartagena 编辑团队 · 修订：2026-10-09','官方参考','查看服务','常见问题'],
+ ko:['이 가이드의 내용','관련 가이드','가이드 읽기','Kite Cartagena 편집팀 · 검토: 2026-10-09','공식 참고 자료','서비스 보기','일반 질문'],
+ ja:['このガイドの内容','関連ガイド','ガイドを読む','Kite Cartagena 編集チーム · 確認: 2026-10-09','公式参考資料','サービスを見る','一般的な質問']
 };
 export const blogDescriptions={
  es:'Guías para elegir fechas, preparar tu primera clase, organizar el viaje y entender el equipo. Encuentra respuestas por tema y continúa con la guía que necesitas.',
