@@ -65,6 +65,8 @@ for (const file of htmlFiles) {
     if (/^(?:https?:|mailto:|tel:|#|data:|javascript:)/i.test(ref)) continue;
     const clean = decodeURIComponent(ref.split(/[?#]/)[0]);
     if (!clean) continue;
+    // Vercel provisions this first-party Analytics route at deployment time.
+    if (clean.startsWith("/_vercel/insights/")) continue;
     const target = clean.startsWith("/") ? path.join(root, clean.slice(1)) : path.resolve(path.dirname(file), clean);
     const candidates = [target, path.join(target, "index.html")];
     if (!candidates.some((candidate) => fs.existsSync(candidate))) errors.push(`${rel}: missing local target ${ref}`);
