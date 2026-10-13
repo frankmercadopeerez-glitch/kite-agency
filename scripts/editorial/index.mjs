@@ -21,6 +21,7 @@ import disciplinesEn from './expansion-disciplines-en.mjs';
 import searchDemand from './expansion-search-demand.mjs';
 import searchDemandEn from './expansion-search-demand-en.mjs';
 import expansionFr from './expansion-all-fr.mjs';
+import expansionPt from './expansion-all-pt.mjs';
 export const expandedArticles=[...decisions,...learning,...gear,...travel,...disciplines,...searchDemand];
 export const articleDetails=Object.fromEntries(expandedArticles.map(([slug,title,desc,tag,parent,service,sections])=>[slug,{parent,service,tag}]));
 
@@ -39,6 +40,10 @@ for(const [slug,title,desc,sections] of [...decisionsEn,...learningEn,...gearEn,
 for(const [slug,title,desc,sections] of expansionFr){
  if(!articleDetails[slug]||guideCopy.fr[slug])throw new Error('Invalid French expansion '+slug);
  guideCopy.fr[slug]={title,desc,sections};
+}
+for(const [slug,title,desc,sections] of expansionPt){
+ if(!articleDetails[slug]||guideCopy.pt[slug])throw new Error('Invalid Portuguese expansion '+slug);
+ guideCopy.pt[slug]={title,desc,sections};
 }
 
 // One owner per search intent. Retired URLs redirect directly to that owner.
@@ -83,7 +88,7 @@ export const editorialUi={
  en:['In this guide','Related guides','Read the guide','Kite Cartagena editorial team · Reviewed: 2026-10-09','Official reference','Explore the service','General questions'],
  fr:['Dans ce guide','Guides associés','Lire le guide','Équipe éditoriale Kite Cartagena · Révision : 09/10/2026','Référence officielle','Consulter le service','Questions générales'],
  de:['In diesem Guide','Weitere Guides','Guide lesen','Redaktion Kite Cartagena · Stand: 09.10.2026','Offizielle Referenz','Angebot ansehen','Allgemeine Fragen'],
- pt:['Neste guia','Guias relacionados','Ler o guia','Equipe editorial Kite Cartagena · Revisão: 09/10/2026','Referência oficial','Consultar o serviço','Perguntas gerais'],
+ pt:['Neste guia','Guias relacionados','Ler o guia','Equipe editorial Kite Cartagena · Revisão: 13/10/2026','Referência oficial','Consultar o serviço','Perguntas gerais'],
  it:['In questa guida','Guide correlate','Leggi la guida','Redazione Kite Cartagena · Revisione: 09/10/2026','Riferimento ufficiale','Consulta il servizio','Domande generali'],
  ru:['В этом материале','Связанные материалы','Читать','Редакция Kite Cartagena · Проверено: 09.10.2026','Официальный источник','Посмотреть услугу','Общие вопросы'],
  zh:['本篇目录','相关指南','阅读指南','Kite Cartagena 编辑团队 · 修订：2026-10-09','官方参考','查看服务','常见问题'],
@@ -134,5 +139,5 @@ for(const [lang,entries] of Object.entries(guideCopy)) {
   if(!entry?.title||!entry.desc||entry.sections.length<4)throw new Error(`Incomplete guide: ${lang}/${slug}`);
   if(entry.sections.some(([h,p])=>!h||!p))throw new Error(`Empty section: ${lang}/${slug}`);
  }
- if(Object.keys(entries).length!==(['es','en','fr'].includes(lang)?86:15))throw new Error(`Unexpected guides: ${lang}`);
+ if(Object.keys(entries).length!==(['es','en','fr','pt'].includes(lang)?86:15))throw new Error(`Unexpected guides: ${lang}`);
 }

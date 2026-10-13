@@ -20,6 +20,8 @@ const cases = [
   { name: "repair-mobile", route: "/reparacion-cometas-kitesurf/", viewport: { width: 390, height: 844 }, aboveFoldCta: true },
   { name: "repair-article-desktop", route: "/en/blog/kite-repair/", viewport: { width: 1366, height: 768 }, article: true },
   { name: "portuguese-contact-mobile", route: "/pt/contato/", viewport: { width: 390, height: 844 }, form: true },
+  { name: "course-mobile", route: "/curso/refuerzo/", viewport: { width: 390, height: 844 }, course: true, cardPadding: true },
+  { name: "portuguese-course-mobile", route: "/pt/curso/refuerzo/", viewport: { width: 390, height: 844 }, course: true, cardPadding: true },
   { name: "course-medium-desktop", route: "/curso/curso-medio/", viewport: { width: 1366, height: 768 }, course: true },
   { name: "spots-desktop", route: "/spots-kitesurf-cartagena/", viewport: { width: 1366, height: 768 }, spots: true },
   { name: "spots-mobile", route: "/spots-kitesurf-cartagena/", viewport: { width: 390, height: 844 }, spots: true },
@@ -84,6 +86,13 @@ for (const test of cases) {
     });
     if (!faqBeforeGuides) failures.push(`${test.name}: course FAQs do not appear before recommended guides`);
   }
+  if (test.cardPadding) {
+    const crampedCards = await page.locator(".visual-feature > div").evaluateAll((cards) => cards.filter((card) => {
+      const style = getComputedStyle(card);
+      return parseFloat(style.paddingLeft) < 16 || parseFloat(style.paddingRight) < 16;
+    }).length);
+    if (crampedCards) failures.push(`${test.name}: ${crampedCards} visual cards have less than 16px horizontal padding`);
+  }
   if (test.reviews) {
     const primaryCards = page.locator('.reviews-group:not([aria-hidden="true"]) [data-review-card]');
     const duplicateGroup = page.locator('.reviews-group[aria-hidden="true"]');
@@ -129,7 +138,12 @@ for (const test of cases) {
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth + 1);
   if (overflow) failures.push(`${test.name}: horizontal overflow detected`);
   if ((await page.locator('.sources').count()) > 0) failures.push(`${test.name}: obsolete standalone source box is still present`);
-  if (consoleErrors.length) failures.push(`${test.name}: console errors: ${consoleErrors.join(" | ")}; resources: ${failedResources.join(" | ")}`);
+  const unexpectedResources = failedResources.filter((item) => !item.includes("/_vercel/insights/script.js"));
+  const unexpectedConsoleErrors = consoleErrors.filter((item) => !(
+    item.includes("Failed to load resource") && failedResources.length > 0 && unexpectedResources.length === 0
+  ));
+  if (unexpectedConsoleErrors.length || unexpectedResources.length) failures.push(`${test.name}: console errors: ${unexpectedConsoleErrors.join(" | ")}; resources: ${unexpectedResources.join(" | ")}`);
+  if (test.cardPadding) await page.locator('.visual-feature').first().screenshot({ path: path.join(output, `${test.name}-card.png`) });
   await page.screenshot({ path: path.join(output, `${test.name}.png`), fullPage: false });
   await page.close();
 }

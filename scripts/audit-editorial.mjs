@@ -13,6 +13,7 @@ for(const [lang,entries] of Object.entries(guideCopy)){
  const titles=new Set(),descs=new Set(),sets=[];
  for(const [slug,c] of Object.entries(entries)){
   const route=url(lang,slug),html=read(route.slice(1)+'index.html');report.guides++;
+  if(/ZXK|▁|�/.test(JSON.stringify(c)))errors.push(`${route}: translation artifact`);
   for(const [field,set] of [['title',titles],['desc',descs]]){if(set.has(c[field]))errors.push(`${route}: duplicate ${field}`);set.add(c[field]);}
   if(!html.includes('data-guide="'+slug+'"'))errors.push(`${route}: missing authored article`);
   if(/class="[^"]*(?:guide-depth|interactive-checklist)|"@type":"FAQPage"/.test(html))errors.push(`${route}: generic filler/schema returned`);

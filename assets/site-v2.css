@@ -438,6 +438,15 @@ h1,h2,h3,h4{font-family:"Aptos Display","Segoe UI Variable Display","Segoe UI",H
  .reviews-group{overflow:visible;padding:0 1rem 0 0;scroll-snap-type:none}
  .review-card{flex:0 0 min(82vw,330px)}
 }
+
+/* Keep readable interior spacing on every card, including narrow phones. */
+.visual-feature>div{padding:clamp(1.1rem,3vw,1.5rem)}
+@media(max-width:620px){
+ .card-body,.feature-card .card-body,.course-card .card-body,.blog-card .card-body,.spot-card .card-body{padding:1.05rem 1.1rem 1.2rem}
+ .visual-feature>div{padding:1.1rem 1.15rem 1.3rem}
+ .visual-feature h3{margin-bottom:.55rem;line-height:1.2}
+ .visual-feature p{line-height:1.6}
+}
 @media(prefers-reduced-motion:reduce){
  .reviews-track{width:100%;animation:none;transform:none}
  .reviews-group{display:flex;overflow-x:auto;padding-inline:1rem;scroll-snap-type:x mandatory}
