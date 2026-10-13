@@ -454,6 +454,18 @@ h1,h2,h3,h4{font-family:"Aptos Display","Segoe UI Variable Display","Segoe UI",H
  .review-card{scroll-snap-align:start}
 }
 
+/* Lift the home hero composition so its actions keep clear space above the fold. */
+.hero:not(.compact) .hero-copy{position:relative;top:-clamp(1.75rem,4vh,2.75rem)}
+@media(max-width:620px){.hero:not(.compact) .hero-copy{top:0}}
+
+/* Card calls to action read as controls, without decorative arrow duplication. */
+.course-card .card-link,.blog-card .card-link,.feature-card .card-link{
+ display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:.62rem .9rem;
+ border:1px solid #176b7b;border-radius:7px;background:#176b7b;color:#fff;font-weight:700;line-height:1.1
+}
+.card-link::after{content:none!important}
+.course-card:hover .card-link,.course-card:focus-visible .card-link,.blog-card:hover .card-link,.blog-card:focus-visible .card-link,.feature-card:hover .card-link,.feature-card:focus-visible .card-link{border-color:var(--navy);background:var(--navy);color:#fff}
+
 /* Clear accountability block: factual operator, booking and safety signals. */
 .accountability{display:grid;grid-template-columns:minmax(240px,.8fr) minmax(0,1.6fr);gap:clamp(2rem,5vw,5rem);align-items:start;background:#e8efed}
 .accountability-intro{position:sticky;top:7rem}

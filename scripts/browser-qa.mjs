@@ -10,8 +10,8 @@ const output = path.resolve(import.meta.dirname, "../.qa");
 fs.mkdirSync(output, { recursive: true });
 
 const cases = [
-  { name: "home-wide", route: "/", viewport: { width: 1920, height: 900 }, aboveFoldCta: true, reviews: true },
-  { name: "home-desktop", route: "/", viewport: { width: 1366, height: 768 }, reviews: true },
+  { name: "home-wide", route: "/", viewport: { width: 1920, height: 900 }, aboveFoldCta: true, heroBottomSpace: true, cardButtons: true, reviews: true },
+  { name: "home-desktop", route: "/", viewport: { width: 1366, height: 768 }, heroBottomSpace: true, reviews: true },
   { name: "home-mobile", route: "/", viewport: { width: 390, height: 844 }, aboveFoldCta: true, reviews: true },
   { name: "english-desktop", route: "/en/", viewport: { width: 1366, height: 768 }, reviews: true },
   { name: "home-reduced-motion", route: "/", viewport: { width: 1366, height: 768 }, reviews: true, reducedMotion: true },
@@ -65,6 +65,23 @@ for (const test of cases) {
   if (test.aboveFoldCta) {
     const box = await page.locator(".hero .btn.primary").first().boundingBox();
     if (!box || box.y + box.height > test.viewport.height) failures.push(`${test.name}: primary CTA is below the initial viewport`);
+  }
+  if (test.heroBottomSpace) {
+    const actionsBox = await page.locator(".hero .actions").first().boundingBox();
+    const bottomSpace = actionsBox ? test.viewport.height - (actionsBox.y + actionsBox.height) : 0;
+    if (bottomSpace < 28) failures.push(`${test.name}: hero actions have only ${Math.round(bottomSpace)}px of bottom space`);
+    await page.locator(".hero").screenshot({ path: path.join(output, `${test.name}-hero.png`) });
+  }
+  if (test.cardButtons) {
+    const cardLinks = page.locator(".course-card .card-link,.blog-card .card-link");
+    const arrowLabels = await cardLinks.evaluateAll((items) => items.filter((item) => /[→↗]/.test(item.textContent || "")).length);
+    const textOnlyLinks = await cardLinks.evaluateAll((items) => items.filter((item) => {
+      const style = getComputedStyle(item);
+      return style.backgroundColor === "rgba(0, 0, 0, 0)" || parseFloat(style.borderTopWidth) < 1 || parseFloat(style.paddingLeft) < 10;
+    }).length);
+    if (arrowLabels) failures.push(`${test.name}: ${arrowLabels} card actions still contain arrows`);
+    if (textOnlyLinks) failures.push(`${test.name}: ${textOnlyLinks} card actions still look like plain text links`);
+    await page.locator(".course-card").first().screenshot({ path: path.join(output, `${test.name}-course-card.png`) });
   }
   if (test.article) {
     if ((await page.locator(".inline-source").count()) < 2) failures.push(`${test.name}: article has fewer than two contextual source links`);
