@@ -73,8 +73,8 @@ export default {
   ]
  },
  'packing-list': {
-  title:'Equipaje de kitesurf: qué llevar y cómo preparar el vuelo',
-  desc:'Prepara ropa, material y bolsa deportiva; revisa peso, medidas, conexiones y documentación de tu equipo antes de volar.',
+  title:'Qué llevar a un viaje de kitesurf: lista de equipaje completa',
+  desc:'Lista práctica para un viaje de kitesurf: ropa, material, bolsa deportiva, peso, medidas, conexiones y documentación antes de volar.',
   sections:[
    ['Divide el equipaje en tres grupos','Separa los objetos personales de playa, el material técnico que realmente usarás y los documentos o confirmaciones del viaje. Si contratas un curso con equipo, pregunta primero qué incluye: llevar una cometa por si acaso puede añadir coste sin utilidad. Para un viaje con material propio, haz un inventario con marca, modelo, talla y fotografías del estado antes de cerrar la bolsa.'],
    ['Para la clase y para después','Prepara ropa de baño firme, protección solar adecuada, toalla, agua y ropa seca para regresar. Guarda los objetos de valor fuera de la zona de montaje. Una bolsa para prendas húmedas evita mezclar todo al terminar, pero no debería convertirse en almacenamiento prolongado del material mojado. Si tienes varias sesiones, piensa dónde podrás secar cada pieza entre usos.'],

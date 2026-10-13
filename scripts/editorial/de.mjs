@@ -64,7 +64,7 @@ export default {
  ['Das erste Board','Einsteiger-Kitekurse nutzen häufig Twin-Tips. Wingfoil kombiniert Wing, Board und Foil, kann aber mit angepassten Übungen beginnen. Frage nach dem tatsächlichen Material der ersten Stunde.'],
  ['Platz und Fähigkeiten','Leinen benötigen Aufbau- und Bewegungsraum; ein Foil verlangt auch Beachtung der Wassertiefe. Surf- oder Segelerfahrung kann helfen, ersetzt jedoch keine Einweisung in das konkrete System.'],
  ['Ein Ziel wählen','Vergleiche Lehrer, Dauer und Lernziel statt pauschaler Leichtigkeitsversprechen. Wer die andere Disziplin kennt, sollte trotzdem Bedienung und Sicherheitsverfahren des neuen Materials lernen.']],
- 'kite-repair':['Beschädigter Kite: Diagnose, Reparatur oder Austausch','Beschreibe Luftverlust, Tuch- oder Leinenschäden und verstehe den Reparaturumfang.',
+ 'kite-repair':['Kite reparieren: Schäden prüfen, Reparatur oder Austausch','Erkenne Luftverlust, Tuch- oder Leinenschäden und kläre, ob Reparatur oder Austausch sinnvoll ist.',
  ['Das Symptom beschreiben','Nenne Marke, Modell, Jahr, Größe und Vorgeschichte. Schicke Gesamtbilder und Details mit Maßstab. Druckverlust nach einer bestimmten Zeit ist aussagekräftiger als eine vermutete Bladder-Bestellung.'],
  ['Schäden unterscheiden','Das sichtbare Ventil muss nicht die Leckursache sein. Tuch, Naht und Verstärkung brauchen unterschiedliche Bewertungen. Vermeide improvisierten Kleber und weitere Nutzung; verdeckter Schaden ist kein Festigkeitsnachweis.'],
  ['Leinen und Bar','Das System arbeitet als Einheit. Zusätzliche Knoten oder ähnliche Ersatzteile können das Verhalten ändern. Nimm zweifelhafte Teile außer Betrieb und verlange passende Referenzen im Angebot.'],

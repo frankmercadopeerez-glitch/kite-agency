@@ -117,30 +117,30 @@ export default [
   ],
   [
     "couples-different-levels",
-    "Apprendre kitesurf en couple avec des capacités différentes",
-    "Planifiez des objectifs individuels, des tours d'équipement et des déplacements partagés sans forcer les deux partenaires à faire le même exercice.",
+    "Stage de kitesurf en couple à Cartagena : organiser vos cours",
+    "Préparez vos cours de kitesurf en couple à Cartagena : objectifs selon le niveau, matériel adapté, temps de pratique et déplacements à prévoir.",
     [
       [
         "Partagez le voyage, définissez deux objectifs",
-        "Un débutant doit comprendre le kite ; quelqu'un qui roule déjà est peut-être en train de travailler à revenir à son point de départ. Décrivez les deux situations séparément. Réservation en couple ne signifie pas nécessairement un contenu de cours identique, et une offre commune n'est utile que si son organisation répond aux besoins des deux personnes."
+        "Vous pouvez organiser un stage de kitesurf en couple même si vous n'avez pas le même niveau, à condition de prévoir un enseignement adapté à chacun. L'un peut découvrir le pilotage de l'aile tandis que l'autre travaille la remontée au vent. Indiquez votre expérience séparément et demandez si des cours communs ou des séances distinctes conviennent mieux. Réserver ensemble ne signifie pas devoir faire les mêmes exercices."
       ],
       [
-        "Considérez attentivement l’équipement partagé",
-        "Demandez si vous utiliserez le même kite, comment fonctionnent les tours et qui enseigne à chaque personne. Les différences de poids, d’expérience et d’objectifs peuvent affecter l’équipement approprié. Ne présumez pas qu’une configuration conviendra aux deux simplement parce que vous êtes disponible en même temps."
+        "Vérifiez le matériel et le temps de pratique",
+        "Demandez si le cours prévoit une aile par personne ou du matériel partagé, comment les passages s'alternent et qui encadre chacun. Le poids, l'expérience et les exercices prévus peuvent nécessiter un matériel différent. Distinguez la durée réservée du temps de pratique individuel et vérifiez si le tarif annoncé concerne une personne ou le couple. Un créneau commun ne garantit pas que le même équipement vous convienne à tous les deux."
       ],
       [
-        "D'accord sur les attentes",
-        "Avant la séance, chacun peut choisir une réalisation observable. Répondre de manière cohérente à un signal est aussi valable pour un débutant que consolider une manœuvre l'est pour un pratiquant expérimenté. Évitez de mesurer le plaisir uniquement en fonction de celui qui se trouve en premier sur le planche."
+        "Accordez-vous sur vos attentes",
+        "Avant la séance, définissez avec le moniteur un objectif concret pour chacun. Pour une première expérience, mieux contrôler l'aile peut être un progrès aussi utile que réussir une manœuvre pour une personne déjà autonome. Évitez de comparer vos résultats ou de vous fixer un délai identique pour monter sur la planche. Le programme doit suivre la progression et les conditions du jour."
       ],
       [
-        "Planifier du temps hors de l'eau",
-        "Coordonner le transport, les pauses et un point de rendez-vous si les cours ont lieu séparément. Si un partenaire s'arrête, vérifiez l'effet sur la réservation avant de supposer que son temps peut être transféré. Un calendrier partagé avec des objectifs individuels est plus clair que de réviser le plan à chaque tour."
+        "Organisez aussi le temps hors de l'eau",
+        "À Cartagena, confirmez le point de rendez-vous, les transferts et les pauses avant de rejoindre la plage. Si vos cours ont lieu séparément, convenez d'un lieu pour vous retrouver et prévoyez du temps libre ensemble. Demandez comment une interruption, un report météo ou l'arrêt d'un des participants affecte la réservation ; les heures de l'un ne sont pas nécessairement transférables à l'autre. Gardez une marge dans votre séjour pour adapter les séances aux conditions."
       ]
     ]
   ],
   [
     "solo-kite-travel",
-    "Voyager seul pour le kitesurfsurf : planification et accompagnement",
+    "Voyager seul pour le kitesurf : planification et accompagnement",
     "Organisez les contacts locaux, les bagages et les horaires des séances tout en distinguant les voyages en solo des déplacements sans assistance.",
     [
       [
@@ -508,7 +508,7 @@ export default [
   ],
   [
     "video-coaching",
-    "Utiliser l'analyse vidéo dans une cours de kitesurfsurf",
+    "Utiliser l'analyse vidéo dans un cours de kitesurf",
     "Choisissez des images utiles, une question spécifique et des dispositions claires en matière de confidentialité lors de l'examen de la technique.",
     [
       [
@@ -531,7 +531,7 @@ export default [
   ],
   [
     "progress-log",
-    "Que faut-il enregistrer après chaque cours de kitesurfsurf",
+    "Que faut-il noter après chaque cours de kitesurf ?",
     "Tenez un registre d’apprentissage simple qui communique plus que le nombre d’heures complétées.",
     [
       [
@@ -1497,7 +1497,7 @@ export default [
   ],
   [
     "cartagena-es-buena-para-kitesurf",
-    "Cartagena est-il bon pour le kitesurfsurf ?",
+    "Cartagena est-elle une bonne destination pour le kitesurf ?",
     "Oui. Cartagena peut être une base pratique pour des cours ou pour naviguer lorsque le vent, la zone choisie et le plan de séance conviennent à votre niveau. La saison ne remplace jamais une vérification de la journée réelle.",
     [
       [
